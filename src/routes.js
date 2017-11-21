@@ -1,7 +1,11 @@
 export default [
   {
       path:'/signup',
-      component:require('./pages/signup.vue')  
+      component: require('./pages/signup.vue')  
+  },
+  {
+      path:'/sign',
+      component: require('./pages/sign.vue')
   },
   {
       path: '/about/',

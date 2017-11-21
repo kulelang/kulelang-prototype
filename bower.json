@@ -1,0 +1,24 @@
+{
+  "name": "Kulelang Prototype",
+  "description": "Framework7 Vue + Webpack starter app template",
+  "main": ".postcssrc.js",
+  "authors": [
+    "Ivan Fadila Putra"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "ios",
+    "webpack",
+    "framework7",
+    "vue",
+    "vuejs",
+    "material",
+    "mobile",
+    "app",
+    "f7"
+  ],
+  "homepage": "https://github.com/kulelang/kulelang-prototype",
+  "dependencies": {
+    "Ionicons": "ionicons#^2.0.1"
+  }
+}

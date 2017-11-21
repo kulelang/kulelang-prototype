@@ -12,6 +12,7 @@
                 <f7-input type="text" placeholder="Name"></f7-input>
             </f7-list-item>
                 <f7-button big fill theme="cyan">Daftar</f7-button>
+                <a href="/sign">Sign</a>
         </f7-list>
     </f7-block>
 </f7-page>    

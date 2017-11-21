@@ -1,12 +1,15 @@
 # Framework7 Vue + Webpack App Template
 
-A full-featured Framework7 + Vue + Webpack setup with hot-reload & css extraction. Based on [Vue Webpack Boilerplate](https://github.com/vuejs-templates/webpack)
+A Prototyping Kulelang. Based on [Vue Webpack Boilerplate](https://github.com/vuejs-templates/webpack)
 
 ## Build Setup
 
 ``` bash
 # install dependencies
 npm install
+
+# install vendor dependencies
+bower install
 
 # serve with hot reload at localhost:8080
 npm run dev
@@ -24,3 +27,4 @@ npm run build
 * `src/main.js` - main app file where you include/import all required libs and init app
 * `src/routes.js` - app routes
 * `src/app.vue` - main app structure/component
+* `vendor` - third party dependencies
