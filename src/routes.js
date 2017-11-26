@@ -16,6 +16,14 @@ export default [
       component: require('./pages/form.vue')
   },
   {
+      path:'/main/',
+      component: require('./pages/main-page.vue')
+  },
+  {
+      path:'/progress/',
+      component : require('./pages/progress-page.vue')
+  },
+  {
       path: '/dynamic-route/blog/:blogId/post/:postId/',
       component: require('./pages/dynamic-route.vue')
   }

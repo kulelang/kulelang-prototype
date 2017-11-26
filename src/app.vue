@@ -13,9 +13,7 @@
             <f7-page>
               <!-- Top Navbar-->
               <f7-navbar title="Kulelang Id"></f7-navbar>
-
                   <!-- Gambar Disini -->
-
                   <f7-button class="test" big fill theme="cyan" href="/signup/" active>Go Demo</f7-button>
             </f7-page>
           </f7-pages>

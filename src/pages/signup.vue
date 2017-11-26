@@ -1,6 +1,6 @@
 <template>
 <f7-page>
-    <f7-navbar title="Signup" back-link="Back"></f7-navbar>
+    <f7-navbar back-link="Back"></f7-navbar>
     <f7-block>
         <f7-list form>
             <f7-list-item>
