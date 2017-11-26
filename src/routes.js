@@ -24,6 +24,10 @@ export default [
       component : require('./pages/progress-page.vue')
   },
   {
+      path:'/profile/',
+      component : require('./pages/profile.vue')
+  },
+  {
       path: '/dynamic-route/blog/:blogId/post/:postId/',
       component: require('./pages/dynamic-route.vue')
   }

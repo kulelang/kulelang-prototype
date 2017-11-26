@@ -2,8 +2,8 @@
     <f7-page>
         <f7-navbar back-link="Kembali">
         </f7-navbar>
-        <f7-toolbar top tabbed tabbar >
-            <f7-link tab-link="#home" active>
+        <f7-toolbar top tabbed tabbar>
+            <f7-link tab-link="#home">
                 <f7-icon ion="android-time" size="20px"></f7-icon>Progress
             </f7-link>
             <f7-link>
