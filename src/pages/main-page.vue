@@ -15,6 +15,7 @@
             </div>
             </f7-panel>
 
+        <!-- ini buat semacam header dibawah -->
         <f7-toolbar bottom tabbed tabbar inner>
             <f7-link tab-link="#home" active>
                 <f7-icon ion="android-home" size="22px"></f7-icon>
