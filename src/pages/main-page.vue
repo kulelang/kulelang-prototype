@@ -61,27 +61,24 @@
 </template>
 
 <style>
-    .btn__floated{
+    .btn__floated {
         margin-bottom: 50px;
-    }
-    .card__margin {
-        margin: 10px;
     }
     .list__margin {
         margin: 20px;
     }
     .square{
         background-color: #EEEE;
-        padding: 50px; 
+        padding: 50px;
     }
-    .title{
-        float: right;
-    }
+
 
 </style>
 
 <script>
-export default {}
+export default {
+    name : 'Main'
+}
 </script>
 
 

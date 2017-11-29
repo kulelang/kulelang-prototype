@@ -32,7 +32,9 @@
 </style>
     
 <script>
-export default {}
+export default {
+    name:'Sign'
+}
 </script>
 
 

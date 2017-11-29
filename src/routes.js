@@ -1,23 +1,28 @@
+import About from './pages/about.vue'
+import Main from './pages/main-page.vue'
+import Sign from './pages/sign.vue'
+import Signup from './pages/signup.vue'
+
 export default [
   {
       path:'/signup',
-      component: require('./pages/signup.vue')  
+      component: Signup
   },
   {
       path:'/sign',
-      component: require('./pages/sign.vue')
+      component: Sign
   },
   {
       path: '/about/',
-      component: require('./pages/about.vue')
+      component: About
   },
   {
       path: '/form/',
-      component: require('./pages/form.vue')
+      component: About
   },
   {
       path:'/main/',
-      component: require('./pages/main-page.vue')
+      component: Main
   },
   {
       path:'/progress/',
@@ -28,8 +33,8 @@ export default [
       component : require('./pages/profile.vue')
   },
   {
-        path:'/editprofile/',
-        component : require('./pages/editprofile.vue')
+      path:'/editprofile/',
+      component : require('./pages/editprofile.vue')
   },
   {
       path: '/dynamic-route/blog/:blogId/post/:postId/',

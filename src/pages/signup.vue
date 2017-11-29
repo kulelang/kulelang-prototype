@@ -23,5 +23,7 @@
 </style>
 
 <script>
-
+    export default {
+        name:'Signup'
+    }
 </script>
