@@ -64,8 +64,8 @@
         <f7-input type="email" placeholder="E-mail"></f7-input>
       </f7-list-item>
       <!-- button -->
-      <f7-link href="/editprofile/" class="button button-round">Round Button 1</f7-link>
-      <f7-link href="/editprofile/">
+      <f7-link href="/test/" class="button button-round">Round Button 1</f7-link>
+      <f7-link href="/test/">
                 <f7-icon ion="android-time" size="22px"></f7-icon>
             </f7-link>
     </f7-list>
