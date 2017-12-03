@@ -37,11 +37,12 @@ export default [
       component : require('./pages/editprofile.vue')
   },
   {
-        path:'/test/',
-        component: require('./pages/1.vue')
+        path:'/insertproduct/',
+        component: require('./pages/insertproduct.vue')
   },
   {
       path: '/dynamic-route/blog/:blogId/post/:postId/',
       component: require('./pages/dynamic-route.vue')
-  }
+  },
+  
 ]

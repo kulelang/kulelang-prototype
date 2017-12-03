@@ -33,8 +33,7 @@
 
     <f7-block inner>
       <p>PROFILE</p>
-      <img :src="'./src/img/logo.png'">
-
+    <img src="src/img/logo.png" class="lazy">
         <f7-list form>
       <f7-list-item>
         <f7-label>Name</f7-label>
@@ -64,10 +63,7 @@
         <f7-input type="email" placeholder="E-mail"></f7-input>
       </f7-list-item>
       <!-- button -->
-      <f7-link href="/test/" class="button button-round">Round Button 1</f7-link>
-      <f7-link href="/test/">
-                <f7-icon ion="android-time" size="22px"></f7-icon>
-            </f7-link>
+      <f7-button raised color="green" fill href="editprofile" class="round">Edit</f7-button>
     </f7-list>
     </f7-block>
   </f7-page>
@@ -77,3 +73,9 @@
 export default {}
 
 </script>
+
+<style>
+  .round{
+    border-radius: 30px
+  }
+</style>
