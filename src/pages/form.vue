@@ -21,7 +21,7 @@
       </f7-list-item>
       <f7-list-item>
         <f7-label>Phone</f7-label>
-        <f7-input type="tel" placeholder="Phone"></f7-input>
+        <f7-input type="int" placeholder="Phone"></f7-input>
       </f7-list-item>
       <f7-list-item>
         <f7-label>Birth date</f7-label>
