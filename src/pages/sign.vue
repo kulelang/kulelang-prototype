@@ -14,12 +14,18 @@
                 <f7-label>Password</f7-label>
                 <f7-input type="password" placeholder="Password" class="tengah"></f7-input>
             </f7-list-item>
+            <f7-list-item checkbox name="my-checkbox" value="1" style="font-size:14px">
+                <f7-label>Remember me</f7-label>
+            </f7-list-item>
+            <!-- gabisa nganan in -->
+            <f7-link href="#" class="text-xs-right">Lupa Password</f7-link>
+           
                 <f7-button href="/main" class="btn__margin" big fill theme="cyan"> Login</f7-button>
                 <br>
                 <f7-button class="btn__margin" big fill color="red"> <i class="ion-social-googleplus-outline"></i> Login using google</f7-button>
                 <f7-button class="btn__margin" big fill color="blue"> <i class="ion-social-facebook"></i> Login using facebook</f7-button>
 
-            <f7-list-item checkbox name="my-checkbox" value="1" style="font-size:14px">Remember me</f7-list-item>
+            
         </f7-list>
     </f7-block>
 </f7-page>    
@@ -32,6 +38,9 @@
     }
     .btn__margin{
         margin: 15px;
+    }
+    .margin__right{
+        text-align: right;
     }
 </style>
     

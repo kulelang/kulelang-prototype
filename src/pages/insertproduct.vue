@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name:'insertproduct'
+    name:'Insertproduct'
 }
 </script>
 

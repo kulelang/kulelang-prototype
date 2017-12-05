@@ -4,6 +4,13 @@
     <h1 align="center">DAFTAR</h1>
     <f7-block>
         <f7-list form>
+            <h2>Buat Akun Baru</h2>
+        </f7-list>
+        
+        <f7-list form>
+            <f7-list-item>
+                <p>Buat akunmu sekarang</p>
+            </f7-list-item>
             <f7-list-item>
                 <!-- <f7-label>Username</f7-label> -->
                 <f7-input type="text" placeholder="Username" align="center"></f7-input>
