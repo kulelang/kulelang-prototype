@@ -2,6 +2,8 @@ import About from './pages/about.vue'
 import Main from './pages/main-page.vue'
 import Sign from './pages/sign.vue'
 import Signup from './pages/signup.vue'
+import Lupapassword from './pages/lupapassword.vue'
+import Insertproduct from './pages/insertproduct.vue'
 
 export default [
   {
@@ -38,11 +40,15 @@ export default [
   },
   {
         path:'/insertproduct/',
-        component: require('./pages/insertproduct.vue')
+        component: Insertproduct
   },
   {
       path: '/dynamic-route/blog/:blogId/post/:postId/',
       component: require('./pages/dynamic-route.vue')
+  },
+  {
+    path:'/lupa/',
+    component: Lupapassword
   },
   
 ]

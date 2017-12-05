@@ -9,11 +9,8 @@
         
         <f7-list form>
             <f7-list-item>
-                <p>Buat akunmu sekarang</p>
-            </f7-list-item>
-            <f7-list-item>
                 <!-- <f7-label>Username</f7-label> -->
-                <f7-input type="text" placeholder="Username" align="center"></f7-input>
+                <f7-input type="text" placeholder="Username"></f7-input>
             </f7-list-item>
             <f7-list-item>
                 <!-- <f7-label>Email</f7-label> -->
