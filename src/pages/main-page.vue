@@ -32,14 +32,15 @@
         </f7-toolbar>
 
         
-        <!-- <f7-fab class="btn__floated" color="orange"> -->
+        <f7-fab class="btn__floated" color="orange" href="/insertproduct/">
             <f7-link href="/insertproduct/">
             <f7-icon icon="icon-plus"></f7-icon>
             </f7-link>
-        <!-- </f7-fab> -->
-        <f7-button raised color="orange" fill href="/insertproduct/" class="round">
+        </f7-fab>
+
+        <!-- <f7-button raised color="orange" fill href="/insertproduct/" class="round">
              <f7-icon icon="icon-plus"></f7-icon>
-        </f7-button>
+        </f7-button> -->
         
 
         <f7-list class="list__margin">

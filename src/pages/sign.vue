@@ -18,7 +18,7 @@
                 <f7-label>Remember me</f7-label>
             </f7-list-item>
             <!-- gabisa nganan in -->
-            <f7-link href="#" class="text-xs-right">Lupa Password</f7-link>
+            <f7-link href="#" class="text-xs-right">Lupa Password?</f7-link>
            
                 <f7-button href="/main" class="btn__margin" big fill theme="cyan"> Login</f7-button>
                 <br>
