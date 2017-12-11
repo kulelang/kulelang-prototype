@@ -1,4 +1,4 @@
-// nampilin profile
+// menampilkan profile
 <template>
   <f7-page>
     <!-- <f7-navbar back-link="Back" sliding></f7-navbar> -->
@@ -31,40 +31,96 @@
             </f7-link>
         </f7-toolbar>
 
+      
+      <f7-card>
+        <f7-card-header class="fontbold">Informasi Akun</f7-card-header>
+        <f7-card-content>
+            <f7-list form class="font">
+              <f7-list-item>
+                <f7-label>E-mail</f7-label>
+                <f7-input type="email" placeholder="E-mail" disabled></f7-input>
+              </f7-list-item>
+              <f7-list-item>
+                <f7-label>Name</f7-label>
+                <f7-input type="text" placeholder="Name"></f7-input>
+              </f7-list-item>
+              <f7-list-item>
+                <f7-label>Birth date</f7-label>
+                <f7-input type="date" placeholder="Birth date" value="2014-04-30"></f7-input>
+              </f7-list-item>
+           </f7-list>
+        </f7-card-content>
+        <f7-card-footer>
+          <f7-button round color="pink" fill class="button" href="/main/">Ubah</f7-button>
+        </f7-card-footer>
+      </f7-card>
+
+       <f7-card>
+        <f7-card-header class="fontbold">Alamat Penagihan & Pengiriman</f7-card-header>
+        <f7-card-content>
+            <f7-list form class="font">
+              <f7-list-item>
+                <f7-label>Nama</f7-label>
+                <f7-input type="text" placeholder="Nama" ></f7-input>
+              </f7-list-item>
+              <f7-list-item>
+                <f7-label>Alamat</f7-label>
+                <f7-input type="text" placeholder="Alamat"></f7-input>
+              </f7-list-item>
+              <f7-list-item>
+                <f7-label>Nomor HP</f7-label>
+                <f7-input type="number" placeholder="nomor HP"></f7-input>
+              </f7-list-item>
+              <f7-list-item>
+                <f7-label>Nomor HP lainnya</f7-label>
+                <f7-input type="number" placeholder="nomor HP lainnya"></f7-input>
+              </f7-list-item>
+           </f7-list>
+        </f7-card-content>
+        <f7-card-footer>
+          <f7-button round color="pink" fill class="button" href="/main/">Ubah</f7-button>
+        </f7-card-footer>
+        <f7-card-footer>
+          <f7-button round color="blue" fill class="button" href="/main/">Tambah Alamat Baru</f7-button>
+        </f7-card-footer>
+      </f7-card>
+
 
     <f7-block inner>
-      <p>PROFILE</p>
-    <img src="src/img/logo.png" class="lazy">
-        <f7-list form>
-      <f7-list-item>
-        <f7-label>Name</f7-label>
-        <f7-input type="text" placeholder="Name"></f7-input>
-      </f7-list-item>
-       <f7-list-item>
-        <f7-label>Birth date</f7-label>
-        <f7-input type="date" placeholder="Birth date" value="2014-04-30"></f7-input>
-      </f7-list-item>
-       <f7-list-item>
-        <f7-label>Gender</f7-label>
-        <f7-input type="select">
-          <option value="1">Male</option>
-          <option value="1">Female</option>
-        </f7-input>
-      </f7-list-item>
-      <f7-list-item>
-        <f7-label>Alamat</f7-label>
-        <f7-input type="textarea" placeholder="Alamat"></f7-input>
-      </f7-list-item>
-      <f7-list-item>
-        <f7-label>Telephone</f7-label>
-        <f7-input type="tel" placeholder="Telephone"></f7-input>
-      </f7-list-item>
-      <f7-list-item>
-        <f7-label>E-mail</f7-label>
-        <f7-input type="email" placeholder="E-mail"></f7-input>
-      </f7-list-item>
-      <!-- button -->
-      <f7-button raised color="green" fill href="editprofile" class="round">Edit</f7-button>
+      <h2>Akun Saya</h2>
+      <img src="src/img/logo.png" class="lazy">
+      
+      <f7-list form>
+        <f7-list-item>
+          <f7-label>E-mail</f7-label>
+          <f7-input type="email" placeholder="E-mail" disabled></f7-input>
+        </f7-list-item>
+        <f7-list-item>
+          <f7-label>Name</f7-label>
+          <f7-input type="text" placeholder="Name"></f7-input>
+        </f7-list-item>
+        <f7-list-item>
+          <f7-label>Birth date</f7-label>
+          <f7-input type="date" placeholder="Birth date" value="2014-04-30"></f7-input>
+        </f7-list-item>
+        <f7-list-item>
+          <f7-label>Gender</f7-label>
+          <f7-input type="select">
+            <option value="1">Male</option>
+            <option value="1">Female</option>
+          </f7-input>
+        </f7-list-item>
+        <f7-list-item>
+          <f7-label>Alamat</f7-label>
+          <f7-input type="textarea" placeholder="Alamat"></f7-input>
+        </f7-list-item>
+        <f7-list-item>
+          <f7-label>Telephone</f7-label>
+          <f7-input type="tel" placeholder="Telephone"></f7-input>
+        </f7-list-item>
+        
+        <!-- button -->
+        <f7-button raised color="green" fill href="editprofile" class="round">Edit</f7-button>
     </f7-list>
     </f7-block>
   </f7-page>
@@ -78,5 +134,15 @@ export default {}
 <style>
   .round{
     border-radius: 30px
+  }
+  .fontbold{
+    font-size: 15px;
+    font-weight: bold
+  }
+  .font{
+    font-size: 12px
+  }
+  .button {
+    margin:0 auto; /* this will center  it */
   }
 </style>

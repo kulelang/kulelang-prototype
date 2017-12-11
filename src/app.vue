@@ -20,7 +20,7 @@
         </f7-view>
       </f7-views>
   </div>
-</template>
+</template> 
 
 <style>
     .test{

@@ -1,129 +1,69 @@
 <template>
   <f7-page>
-    <f7-navbar title="Form" back-link="Back" sliding></f7-navbar>
-    <f7-block-title>Form</f7-block-title>
-    <f7-list form>
-      <f7-list-item>
-        <f7-label>Name</f7-label>
-        <f7-input type="text" placeholder="Name"></f7-input>
-      </f7-list-item>
-      <f7-list-item>
-        <f7-label>Password</f7-label>
-        <f7-input type="password" placeholder="Password"></f7-input>
-      </f7-list-item>
-      <f7-list-item>
-        <f7-label>E-mail</f7-label>
-        <f7-input type="email" placeholder="E-mail"></f7-input>
-      </f7-list-item>
-      <f7-list-item>
-        <f7-label>URL</f7-label>
-        <f7-input type="url" placeholder="URL"></f7-input>
-      </f7-list-item>
-      <f7-list-item>
-        <f7-label>Phone</f7-label>
-        <f7-input type="tel" placeholder="Phone"></f7-input>
-      </f7-list-item>
-      <f7-list-item>
-        <f7-label>Birth date</f7-label>
-        <f7-input type="date" placeholder="Birth date" value="2014-04-30"></f7-input>
-      </f7-list-item>
-      <f7-list-item>
-        <f7-label>Date time</f7-label>
-        <f7-input type="datetime-local"></f7-input>
-      </f7-list-item>
-      <f7-list-item>
-        <f7-label>Gender</f7-label>
-        <f7-input type="select">
-          <option value="1">Male</option>
-          <option value="1">Female</option>
-        </f7-input>
-      </f7-list-item>
-      <f7-list-item>
-        <f7-label>Switch</f7-label>
-        <f7-input type="switch"></f7-input>
-      </f7-list-item>
-      <f7-list-item>
-        <f7-label>Range</f7-label>
-        <f7-input type="range" min="0" max="100" step="1" value="90"></f7-input>
-      </f7-list-item>
-      <f7-list-item>
-        <f7-label>Textarea</f7-label>
-        <f7-input type="textarea" placeholder="Textarea"></f7-input>
-      </f7-list-item>
-    </f7-list>
+    <!-- Simple Chip -->
+<f7-chip text="Example Chip"></f7-chip>
+<!-- Colored Chip -->
+<f7-chip text="Another Chip" bg="red" color="white"></f7-chip>
+<!-- Media Chip -->
+<f7-chip text="Jane Doe" media='<img src="http://lorempixel.com/100/100/people/9/">'></f7-chip>
+<!-- Deleteable Chip -->
+<f7-chip text="Another Chip" deleteable @delete="onChipDelete"></f7-chip>
+<!-- Deleteable Media Chip -->
+<f7-chip text="Jane Doe" media='<img src="http://lorempixel.com/100/100/people/9/">' media-bg="red" deleteable @delete="onChipDelete"></f7-chip>
+  
 
-    <f7-block-title>Form With Floating Labels</f7-block-title>
-    <f7-list form>
-      <f7-list-item>
-        <f7-label floating>Name</f7-label>
-        <f7-input type="text" placeholder="Name"></f7-input>
-      </f7-list-item>
-      <f7-list-item>
-        <f7-label floating>Password</f7-label>
-        <f7-input type="password" placeholder="Password"></f7-input>
-      </f7-list-item>
-      <f7-list-item>
-        <f7-label floating>E-mail</f7-label>
-        <f7-input type="email" placeholder="E-mail"></f7-input>
-      </f7-list-item>
-    </f7-list>
+  <f7-card>
+  <f7-card-header>Card header content</f7-card-header>
+  <f7-card-content>Card content</f7-card-content>
+  <f7-card-footer>Card footer content</f7-card-footer>
+</f7-card>
 
-    <f7-block-title>Form Without Labels</f7-block-title>
-    <f7-list form>
-      <f7-list-item>
-        <f7-input type="text" placeholder="Name"></f7-input>
-      </f7-list-item>
-      <f7-list-item>
-        <f7-input type="password" placeholder="Password"></f7-input>
-      </f7-list-item>
-      <f7-list-item>
-        <f7-input type="email" placeholder="E-mail"></f7-input>
-      </f7-list-item>
-    </f7-list>
 
-    <f7-block-title>Checkboxes</f7-block-title>
-    <f7-list form>
-      <f7-list-item v-for="n in 3" :key="n" checkbox name="my-checkbox" :value="n" :title="'Checkbox ' + n"></f7-list-item>
-    </f7-list>
 
-    <f7-block-title>Radios</f7-block-title>
-    <f7-list form>
-      <f7-list-item v-for="n in 3" :key="n" radio name="my-radio" :checked="n === 1" :value="n" :title="'Radio ' + n"></f7-list-item>
-    </f7-list>
+<f7-list>
+  <f7-list-item swipeout title="Item 1" @swipeout:deleted="onSwipeoutDeleted">
+    <f7-swipeout-actions>
+      <f7-swipeout-button delete>Delete</f7-swipeout-button>
+    </f7-swipeout-actions>
+  </f7-list-item>
+  <f7-list-item swipeout title="Item 2" @swipeout:deleted="onSwipeoutDeleted">
+    <f7-swipeout-actions>
+      <f7-swipeout-button delete>Delete</f7-swipeout-button>
+    </f7-swipeout-actions>
+  </f7-list-item>
+</f7-list>
 
-    <f7-block-title>Buttons</f7-block-title>
-    <f7-block inner>
-      <p><f7-button>Button</f7-button></p>
-      <p><f7-button round>Button Round</f7-button></p>
-      <p><f7-button fill>Button Fill</f7-button></p>
-      <p>
-        <f7-buttons>
-          <f7-button round active>Button 1</f7-button>
-          <f7-button round>Button 2</f7-button>
-          <f7-button round>Button 3</f7-button>
-        </f7-buttons>
-      </p>
-      <p>
-        <f7-buttons color="orange">
-          <f7-button round big>Button 1</f7-button>
-          <f7-button round big active>Button 2</f7-button>
-          <f7-button round big>Button 3</f7-button>
-        </f7-buttons>
-      </p>
-      <p>
-        <f7-grid>
-          <f7-col><f7-button big fill color="green">Send</f7-button></f7-col>
-          <f7-col><f7-button big fill color="red">Delete</f7-button></f7-col>
-        </f7-grid>
-      </p>
-      <p>
-        <f7-grid>
-          <f7-col><f7-button fill raised color="green">Raised</f7-button></f7-col>
-          <f7-col><f7-button raised color="red">Raised</f7-button></f7-col>
-          <f7-col><f7-button fill raised color="pink">Raised</f7-button></f7-col>
-        </f7-grid>
-      </p>
-    </f7-block>
+
+<f7-grid>
+  <f7-col>Col 1</f7-col>
+  <f7-col>Col 2</f7-col>
+  <f7-col>Col 3</f7-col>
+</f7-grid>
+
+
+<f7-grid no-gutter>
+  <f7-col width="50">Col 50%</f7-col>
+  <f7-col width="25">Col 25%</f7-col>
+  <f7-col width="25">Col 25%</f7-col>
+</f7-grid>
+
+<div class="toolbar messagebar">
+  <div class="toolbar-inner">
+    <textarea placeholder="Message"></textarea>
+    <a href="#" class="link">Send</a>
+  </div>
+</div>
+
+<f7-messagebar placeholder="Message" @submit="onSubmit">
+  <div slot="before-inner">Before inner</div>
+  <div slot="after-inner">After inner</div>
+  <div slot="before-textarea">Before textarea</div>
+  <div slot="after-textarea">After textarea</div>
+  <span slot="send-link">Send</span>
+  <div>Default slot</div>
+</f7-messagebar>
+<!-- 
+<f7-card title="Card Title" content="Card Content" footer="Card Footer"></f7-card> -->
   </f7-page>
 </template>
 
