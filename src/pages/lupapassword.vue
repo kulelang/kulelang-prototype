@@ -25,7 +25,7 @@
                 <f7-input type="text" placeholder="Alamat E-mail"></f7-input>
             </f7-list-item>
             <br>
-            <f7-button big fill theme="cyan" href="#">Minta Password</f7-button>
+            <f7-button color="green" fill  href="#">Minta Password</f7-button>
             
             
         </f7-list>

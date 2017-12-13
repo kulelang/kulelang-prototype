@@ -2,8 +2,13 @@ import About from './pages/about.vue'
 import Main from './pages/main-page.vue'
 import Sign from './pages/sign.vue'
 import Signup from './pages/signup.vue'
+import Progress from './pages/progress-page.vue'
 import Lupapassword from './pages/lupapassword.vue'
 import Insertproduct from './pages/insertproduct.vue'
+import Profile from './pages/profile.vue'
+import EditProfile from './pages/editprofile.vue'
+import EditKontak from './pages/edit-kontak.vue'
+import TambahAlamat from './pages/tambah-alamat.vue'
 
 export default [
   {
@@ -28,15 +33,15 @@ export default [
   },
   {
       path:'/progress/',
-      component : require('./pages/progress-page.vue')
+      component : Progress
   },
   {
       path:'/profile/',
-      component : require('./pages/profile.vue')
+      component : Profile
   },
   {
       path:'/editprofile/',
-      component : require('./pages/editprofile.vue')
+      component : EditProfile
   },
   {
         path:'/insertproduct/',
@@ -47,8 +52,16 @@ export default [
       component: require('./pages/dynamic-route.vue')
   },
   {
-    path:'/lupa/',
-    component: Lupapassword
+      path:'/lupa/',
+      component: Lupapassword
   },
+  {
+      path: '/editkontak/',
+      component: EditKontak
+  },
+  {
+      path: '/tambahalamat/',
+      component: TambahAlamat
+  }
   
 ]

@@ -31,42 +31,33 @@
             </f7-link>
         </f7-toolbar>
 
-       <f7-card>
-        <f7-card-header class="fontbold">Edit Alamat</f7-card-header>
+      
+      <f7-card>
+        <f7-card-header class="fontbold">Informasi Kontak</f7-card-header>
         <f7-card-content>
             <f7-list form class="font">
+             
               <f7-list-item>
-                <f7-input type="text" placeholder="Nama"></f7-input>
+                <f7-input type="text" placeholder="Nama" ></f7-input>
               </f7-list-item>
               <f7-list-item>
-                <f7-input type="number" placeholder="nomor HP"></f7-input>
+                <f7-input type="date" placeholder="Tanggal Lahir" value="2014-04-30" ></f7-input>
               </f7-list-item>
               <f7-list-item>
-                <f7-input type="number" placeholder="nomor HP lainnya"></f7-input>
+                  <f7-input type="password" placeholder="Password"></f7-input>
               </f7-list-item>
-              <f7-list-item>
-                <f7-input type="text" placeholder="Alamat"></f7-input>
+               <f7-list-item>
+                <f7-input type="email" placeholder="E-mail" disabled></f7-input>
               </f7-list-item>
-              <f7-list-item>
-                <f7-input type="text" placeholder="Provinsi"></f7-input>
-              </f7-list-item>
-              <f7-list-item>
-                <f7-input type="text" placeholder="Kota"></f7-input>
-              </f7-list-item>
-              <f7-list-item>
-                <f7-input type="text" placeholder="Kecamatan"></f7-input>
-              </f7-list-item>
-              <f7-list-item>
-                <f7-input type="number" placeholder="Kode Pos" ></f7-input>
-              </f7-list-item>
-              
            </f7-list>
         </f7-card-content>
         <f7-card-footer>
           <f7-button round color="pink" fill class="round" href="/profile/">Simpan</f7-button>
-          <f7-button round color="blue" fill class="round" href="/main/">Tidak</f7-button>
+          <f7-button round color="green" fill class="round" href="/main/">Tidak</f7-button>
         </f7-card-footer>
-        <f7-card-footer>
+      </f7-card>
+
+       
           
           
         </f7-card-footer>
@@ -79,7 +70,7 @@
 
 <script>
   export default {
-        name:'EditProfile'
+        name:'EditKontak'
     }
 
 </script>

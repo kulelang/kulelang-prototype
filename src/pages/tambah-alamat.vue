@@ -26,60 +26,45 @@
             <f7-link href="/about/">
                 <f7-icon ion="information-circled" size="22px"></f7-icon>
             </f7-link>
-            <f7-link tab-link="#profile" active>
+            <f7-link href="/profile/">
                 <f7-icon ion="android-person" size="22px"></f7-icon>
             </f7-link>
         </f7-toolbar>
 
-      
-      <f7-card>
-        <f7-card-header class="fontbold">Informasi Akun</f7-card-header>
-        <f7-card-content>
-            <f7-list form class="font">
-              <f7-list-item>
-                <f7-label>E-mail</f7-label>
-                <f7-input type="email" placeholder="E-mail" disabled></f7-input>
-              </f7-list-item>
-              <f7-list-item>
-                <f7-label>Name</f7-label>
-                <f7-input type="text" placeholder="Name" disabled></f7-input>
-              </f7-list-item>
-              <f7-list-item>
-                <f7-label>Birth date</f7-label>
-                <f7-input type="date" placeholder="Birth date" value="2014-04-30" disabled></f7-input>
-              </f7-list-item>
-           </f7-list>
-        </f7-card-content>
-        <f7-card-footer>
-          <f7-button round color="pink" fill class="round" href="/editkontak/">Ubah</f7-button>
-        </f7-card-footer>
-      </f7-card>
-
        <f7-card>
-        <f7-card-header class="fontbold">Alamat Penagihan & Pengiriman</f7-card-header>
+        <f7-card-header class="fontbold">Edit Alamat</f7-card-header>
         <f7-card-content>
             <f7-list form class="font">
               <f7-list-item>
-                <f7-label>Nama</f7-label>
-                <f7-input type="text" placeholder="Nama" disabled ></f7-input>
+                <f7-input type="text" placeholder="Nama"></f7-input>
               </f7-list-item>
               <f7-list-item>
-                <f7-label>Alamat</f7-label>
-                <f7-input type="text" placeholder="Alamat" disabled></f7-input>
+                <f7-input type="number" placeholder="nomor HP"></f7-input>
               </f7-list-item>
               <f7-list-item>
-                <f7-label>Nomor HP</f7-label>
-                <f7-input type="number" placeholder="nomor HP" disabled></f7-input>
+                <f7-input type="number" placeholder="nomor HP lainnya"></f7-input>
               </f7-list-item>
               <f7-list-item>
-                <f7-label>Nomor HP lainnya</f7-label>
-                <f7-input type="number" placeholder="nomor HP lainnya" disabled></f7-input>
+                <f7-input type="text" placeholder="Alamat"></f7-input>
               </f7-list-item>
+              <f7-list-item>
+                <f7-input type="text" placeholder="Provinsi"></f7-input>
+              </f7-list-item>
+              <f7-list-item>
+                <f7-input type="text" placeholder="Kota"></f7-input>
+              </f7-list-item>
+              <f7-list-item>
+                <f7-input type="text" placeholder="Kecamatan"></f7-input>
+              </f7-list-item>
+              <f7-list-item>
+                <f7-input type="number" placeholder="Kode Pos" ></f7-input>
+              </f7-list-item>
+              
            </f7-list>
         </f7-card-content>
         <f7-card-footer>
-          <f7-button round color="pink" fill  href="/editprofile/">Ubah</f7-button>
-          <f7-button round color="blue" fill  href="/tambahalamat/">Tambah Alamat Baru</f7-button>
+          <f7-button round color="pink" fill class="round" href="/profile/">Simpan</f7-button>
+          <f7-button round color="blue" fill class="round" href="/main/">Tidak</f7-button>
         </f7-card-footer>
         <f7-card-footer>
           
@@ -94,8 +79,8 @@
 
 <script>
   export default {
-    name:'Profile'
-  }
+        name:'TambahAlamat'
+    }
 
 </script>
 

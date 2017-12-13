@@ -28,6 +28,13 @@
     </f7-page>  
 </template>
 
+
+<script>
+export default {
+  name:'Progress'
+}
+</script>
+
 <style>
     .btn__floated{
         margin-bottom: 50px;

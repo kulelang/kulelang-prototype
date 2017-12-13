@@ -22,7 +22,7 @@
             </f7-list-item>
             <f7-list-item>
                 <!-- <f7-label>No Telepon</f7-label> -->
-                <f7-input type="tel" placeholder="No Telepon"></f7-input>
+                <f7-input type="number" placeholder="No Telepon"></f7-input>
             </f7-list-item>
             <f7-list-item>
                 <!-- <f7-label>Password</f7-label> -->
