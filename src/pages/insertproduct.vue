@@ -1,6 +1,5 @@
 <template>
 <f7-page>
-  <h1>hai</h1>
 
 
   <!-- ini buat semacam header dibawah -->
@@ -18,6 +17,12 @@
                 <f7-icon ion="android-person" size="22px"></f7-icon>
             </f7-link>
         </f7-toolbar>
+
+        <f7-card>
+            <p>hai</p>
+        </f7-card>
+
+
 </f7-page>
 </template>
 
