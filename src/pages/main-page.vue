@@ -50,58 +50,7 @@
             </f7-list-item>
         </f7-list>
 
-        <f7-list class="list__margin">
-            <f7-list-item>
-                <div class="square"></div>
-                <div class="title">Star Wars</div>             
-            </f7-list-item>
-        </f7-list>
-
-        <f7-list class="list__margin">
-            <f7-list-item>
-                <div class="square"></div>
-                <div class="title">Lord Of The Ring</div>             
-            </f7-list-item>
-        </f7-list>
-         <f7-list class="list__margin">
-            <f7-list-item>
-                <div class="square"></div>
-                <div class="title">Lego Badman</div>             
-            </f7-list-item>
-        </f7-list>
-
-        <f7-list class="list__margin">
-            <f7-list-item>
-                <div class="square"></div>
-                <div class="title">Star Wars</div>             
-            </f7-list-item>
-        </f7-list>
-
-        <f7-list class="list__margin">
-            <f7-list-item>
-                <div class="square"></div>
-                <div class="title">Lord Of The Ring</div>             
-            </f7-list-item>
-        </f7-list> <f7-list class="list__margin">
-            <f7-list-item>
-                <div class="square"></div>
-                <div class="title">Lego Badman</div>             
-            </f7-list-item>
-        </f7-list>
-
-        <f7-list class="list__margin">
-            <f7-list-item>
-                <div class="square"></div>
-                <div class="title">Star Wars</div>             
-            </f7-list-item>
-        </f7-list>
-
-        <f7-list class="list__margin">
-            <f7-list-item>
-                <div class="square"></div>
-                <div class="title">Lord Of The Ring</div>             
-            </f7-list-item>
-        </f7-list>
+        
 
     </f7-page>  
 
