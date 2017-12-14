@@ -64,8 +64,15 @@
         <f7-card>
           <f7-card-header class="fontbold">Gambar Produk</f7-card-header>
           <f7-card-content>
-            <p>nanti disini ada buat upload gambar</p>
-            <f7-link text="Hapus" color="blue"></f7-link>
+            <f7-list class="list__margin">
+            <f7-list-item>
+                <div class="square"></div>
+                 <div class="square"></div>
+                <div class="title">Add Image</div>             
+            </f7-list-item>
+             <f7-link text="Hapus" color="blue"></f7-link>
+        </f7-list>
+           
           </f7-card-content>
         </f7-card>
 
@@ -121,7 +128,6 @@
               <f7-list-item>
                 <f7-label>Open Bid (OB) (Rp)</f7-label>
                 <f7-input type="number" placeholder="Masukkan Open Bid (OB)" ></f7-input>
-                 <f7-label>gram</f7-label>
               </f7-list-item>
             </f7-list> 
 
@@ -129,7 +135,6 @@
               <f7-list-item>
                 <f7-label>Up Bid (UB) (Rp)</f7-label>
                 <f7-input type="number" placeholder="Masukkan Up Bid (UB) (Rp)" ></f7-input>
-                 <f7-label>gram</f7-label>
               </f7-list-item>
             </f7-list> 
 
@@ -137,7 +142,6 @@
               <f7-list-item>
                 <f7-label>Buy It Now (BIN) (Rp)</f7-label>
                 <f7-input type="number" placeholder="Masukkan Buy It Now (BIN)" ></f7-input>
-                 <f7-label>gram</f7-label>
               </f7-list-item>
             </f7-list> 
 

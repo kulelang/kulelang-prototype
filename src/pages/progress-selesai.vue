@@ -18,10 +18,10 @@
         <f7-navbar back-link="Kembali">
         </f7-navbar>
         <f7-toolbar top tabbed tabbar>
-            <f7-link tab-link="#progress">
+            <f7-link href="/progress/">
                 <f7-icon ion="android-time" size="20px"></f7-icon>Progress
             </f7-link>
-            <f7-link href="/terkirim/">
+            <f7-link tab-link="#terkirim">
                 <f7-icon ion="android-done" size="22px"></f7-icon>Selesai
             </f7-link>
         </f7-toolbar>
@@ -50,20 +50,7 @@
             </div>
         </div>
         
-        <div class="card facebook-card">
-            <div class="card-header">
-                <div class="facebook-avatar"><img src="" width="34" height="34"></div>
-                <div class="facebook-name">Nama Barang</div>
-                <div class="facebook-name">Status Barang</div>
-                <div class="facebook-name">No Resi</div>
-                <div class="facebook-date" >Monday at 2:15 PM</div>
-            </div>
-            <div class="card-content">
-                <div class="card-content-inner">
-                <p>Alamat Pengiriman Barang</p>
-                </div>
-            </div>
-        </div>
+     
  
 
 
@@ -121,6 +108,6 @@ export default {
 
 <script>
 export default {
-  name: 'Progress'
+  name: 'Terkirim'
 }
 </script>

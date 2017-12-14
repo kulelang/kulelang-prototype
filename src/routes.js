@@ -9,6 +9,7 @@ import Profile from './pages/profile.vue'
 import EditProfile from './pages/editprofile.vue'
 import EditKontak from './pages/edit-kontak.vue'
 import TambahAlamat from './pages/tambah-alamat.vue'
+import Terkirim from './pages/progress-selesai.vue'
 // import Toolbar from './pages/component/toolbar.vue'
 
 export default [
@@ -64,6 +65,10 @@ export default [
       path: '/tambahalamat/',
       component: TambahAlamat
   },
+  {
+      path: '/terkirim/',
+      component: Terkirim
+  }
 //   {
 //       path: '/toolbar/',
 //       component: Toolbar
