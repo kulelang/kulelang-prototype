@@ -38,6 +38,8 @@
             <!-- Button -->
                 <f7-button big fill theme="cyan">Daftar</f7-button>
                 <a href="/sign">Sign</a>
+
+                
         </f7-list>
     </f7-block>
 </f7-page>    

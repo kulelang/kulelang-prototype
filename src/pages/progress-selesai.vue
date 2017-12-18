@@ -37,8 +37,8 @@
         </f7-list> -->
         <div class="card facebook-card">
             <div class="card-header">
-                <div class="facebook-avatar"><img src="" width="34" height="34"></div>
-                <div class="facebook-name">Nama Barang</div>
+                <div class="facebook-avatar"><img src="" width="50" height="50"></div>
+                <div class="facebook-name"><b>Nama Barang</b></div>
                 <div class="facebook-name">Status Barang</div>
                 <div class="facebook-name">No Resi</div>
                 <div class="facebook-date" >Monday at 2:15 PM</div>
@@ -67,12 +67,18 @@
     float: left;
   }
   .facebook-card .facebook-name {
-    margin-left: 50px;
+    margin-left: 80px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .facebook-card .facebook-name-bold {
+    style: bold;
+    margin-left: 80px;
     font-size: 14px;
     font-weight: 500;
   }
   .facebook-card .facebook-date {
-    margin-left:50px;
+    margin-left:80px;
     font-size: 13px;
     color: #8e8e93;
   }

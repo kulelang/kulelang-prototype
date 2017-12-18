@@ -32,8 +32,8 @@
         </f7-toolbar>
 
         
-        <f7-fab class="btn__floated" color="orange" href="/insertproduct/">
-            <f7-link href="/insertproduct/">
+        <f7-fab class="btn__floated" color="pink" href="/insertproduct/">
+            <!-- <f7-link href="/insertproduct/"> -->
             <f7-icon icon="icon-plus"></f7-icon>
             </f7-link>
         </f7-fab>
@@ -50,7 +50,14 @@
             </f7-list-item>
         </f7-list>
 
-        
+        <f7-block>
+            <f7-list>
+                <f7-list-item>
+                    <f7-input type="text" placeholder="nama"></f7-input>
+                    <f7-button>hai</f7-button>
+                </f7-list-item>
+            </f7-list>
+        </f7-block>
 
     </f7-page>  
 
