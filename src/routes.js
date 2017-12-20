@@ -10,68 +10,72 @@ import EditProfile from './pages/editprofile.vue'
 import EditKontak from './pages/edit-kontak.vue'
 import TambahAlamat from './pages/tambah-alamat.vue'
 import Terkirim from './pages/progress-selesai.vue'
+import DetailBarang from './pages/detailproduct.vue'
 // import Toolbar from './pages/component/toolbar.vue'
 
 export default [
   {
-      path:'/signup',
-      component: Signup
+    path: "/signup",
+    component: Signup
   },
   {
-      path:'/sign',
-      component: Sign
+    path: "/sign",
+    component: Sign
   },
   {
-      path: '/about/',
-      component: About
+    path: "/about/",
+    component: About
   },
   {
-      path: '/form/',
-      component: About
+    path: "/form/",
+    component: About
   },
   {
-      path:'/main/',
-      component: Main
+    path: "/main/",
+    component: Main
   },
   {
-      path:'/progress/',
-      component : Progress
+    path: "/progress/",
+    component: Progress
   },
   {
-      path:'/profile/',
-      component : Profile
+    path: "/profile/",
+    component: Profile
   },
   {
-      path:'/editprofile/',
-      component : EditProfile
+    path: "/editprofile/",
+    component: EditProfile
   },
   {
-        path:'/insertproduct/',
-        component: Insertproduct
+    path: "/insertproduct/",
+    component: Insertproduct
   },
   {
-      path: '/dynamic-route/blog/:blogId/post/:postId/',
-      component: require('./pages/dynamic-route.vue')
+    path: "/dynamic-route/blog/:blogId/post/:postId/",
+    component: require("./pages/dynamic-route.vue")
   },
   {
-      path:'/lupa/',
-      component: Lupapassword
+    path: "/lupa/",
+    component: Lupapassword
   },
   {
-      path: '/editkontak/',
-      component: EditKontak
+    path: "/editkontak/",
+    component: EditKontak
   },
   {
-      path: '/tambahalamat/',
-      component: TambahAlamat
+    path: "/tambahalamat/",
+    component: TambahAlamat
   },
   {
-      path: '/terkirim/',
-      component: Terkirim
+    path: "/terkirim/",
+    component: Terkirim
+  },
+  {
+    path: "/detailbarang/",
+    component: DetailBarang
   }
-//   {
-//       path: '/toolbar/',
-//       component: Toolbar
-//   }
-  
-]
+  //   {
+  //       path: '/toolbar/',
+  //       component: Toolbar
+  //   }
+];
