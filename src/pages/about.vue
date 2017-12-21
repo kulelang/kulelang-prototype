@@ -1,5 +1,22 @@
 <template>
   <f7-page>
+       <f7-navbar >
+            <f7-nav-left>
+                <f7-link icon="icon-bars" open-panel="left"></f7-link>
+                <p>Bantuan</p>
+            </f7-nav-left>
+            
+        </f7-navbar>
+            <!-- Left Panel with Reveal effect -->
+        <f7-panel left cover>
+            <!-- Left panel content goes here -->
+            <div class="content-block">
+                 <p>Left Panel content here</p>
+                    <p><a href="#" class="panel-close">Close me</a>
+                 </p>
+            </div>
+        </f7-panel>
+
     <f7-toolbar bottom tabbed tabbar inner>
             <f7-link href="/main/">
                 <f7-icon ion="android-home" size="22px"></f7-icon>
@@ -15,8 +32,6 @@
             </f7-link>
     </f7-toolbar>
     
-
-    <f7-navbar back-link="Back" sliding></f7-navbar>
     <!-- <f7-block inner>
         <svg height="150" width="500">
           <ellipse cx="240" cy="100" rx="220" ry="30" style="fill:purple" />

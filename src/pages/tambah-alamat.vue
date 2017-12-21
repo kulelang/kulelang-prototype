@@ -1,20 +1,30 @@
 // menampilkan profile
 <template>
   <f7-page>
-    <!-- <f7-navbar back-link="Back" sliding></f7-navbar> -->
-      <f7-navbar title="Kulelang">
-            <f7-nav-right>
-                <f7-link icon="icon-bars" open-panel="right"></f7-link>
+     <f7-navbar >
+            <f7-nav-left>
+                <f7-link icon="icon-bars" open-panel="left"></f7-link>
+                <p>Tambah Alamat</p>
+            </f7-nav-left>
+            <f7-nav-right class="padding-right">
+              <f7-link href="/main/">
+                <f7-icon ion="android-search" size="22px"></f7-icon>
+              </f7-link>
+              <f7-link href="/main/">
+                <f7-icon ion="android-cart" size="22px"></f7-icon>
+              </f7-link>
             </f7-nav-right>
-      </f7-navbar>
-
-      <f7-panel right cover>
-        <!-- Left panel content goes here -->
-        <div class="content-block">
-             <p>PROFILE</p>
-             <p><a href="#" class="panel-close" >Close me</a></p>
-        </div>
-      </f7-panel>
+            
+        </f7-navbar>
+            <!-- Left Panel with Reveal effect -->
+        <f7-panel left cover>
+            <!-- Left panel content goes here -->
+            <div class="content-block">
+                 <p>Left Panel content here</p>
+                    <p><a href="#" class="panel-close">Close me</a>
+                 </p>
+            </div>
+        </f7-panel>
 
       <f7-toolbar bottom tabbed tabbar inner>
             <f7-link href="/main/">
@@ -24,7 +34,7 @@
                 <f7-icon ion="android-time" size="22px"></f7-icon>
             </f7-link>
             <f7-link href="/about/">
-                <f7-icon ion="information-circled" size="22px"></f7-icon>
+                <f7-icon ion="help-circled" size="22px"></f7-icon>
             </f7-link>
             <f7-link href="/profile/">
                 <f7-icon ion="android-person" size="22px"></f7-icon>
@@ -99,5 +109,8 @@
   }
   .button {
     margin:0 auto; /* this will center  it */
+  }
+  .padding-right{
+    padding-right: 10px;
   }
 </style>

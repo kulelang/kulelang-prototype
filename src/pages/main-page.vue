@@ -1,19 +1,21 @@
 <template>
     <f7-page class="bg" >
-        <f7-navbar title="Kulelang">
-            <f7-nav-right>
-                <f7-link icon="icon-bars" open-panel="right"></f7-link>
-            </f7-nav-right>
+        <f7-navbar >
+            <f7-nav-left>
+                <f7-link icon="icon-bars" open-panel="left"></f7-link>
+                <p>Halaman Utama</p>
+            </f7-nav-left>
+            
         </f7-navbar>
             <!-- Left Panel with Reveal effect -->
-        <f7-panel right cover>
+        <f7-panel left cover>
             <!-- Left panel content goes here -->
             <div class="content-block">
-                 <p>Right Panel content here</p>
+                 <p>Left Panel content here</p>
                     <p><a href="#" class="panel-close">Close me</a>
                  </p>
             </div>
-            </f7-panel>
+        </f7-panel>
 
         <!-- ini buat semacam header dibawah -->
         <f7-toolbar bottom tabbed tabbar inner>
@@ -24,7 +26,7 @@
                 <f7-icon ion="android-time" size="22px"></f7-icon>
             </f7-link>
             <f7-link href="/about/">
-                <f7-icon ion="information-circled" size="22px"></f7-icon>
+                <f7-icon ion="help-circled" size="22px"></f7-icon>
             </f7-link>
             <f7-link href="/profile/">
                 <f7-icon ion="android-person" size="22px"></f7-icon>
@@ -172,6 +174,9 @@
         padding: 10px;  
         margin-inline-start: 20px;
         margin-inline-end: 20px;
+    }
+    .center{
+        text-align: center;
     }
 
 
