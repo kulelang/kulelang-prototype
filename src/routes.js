@@ -2,16 +2,19 @@ import About from './pages/about.vue'
 import Main from './pages/main-page.vue'
 import Sign from './pages/sign.vue'
 import Signup from './pages/signup.vue'
-import Progress from './pages/progress-page.vue'
+
+import Process from './pages/progress-product/process'
+import Finish from './pages/progress-product/finish'
+
 import Lupapassword from './pages/lupapassword.vue'
-import Insertproduct from './pages/insertproduct.vue'
-import Profile from './pages/profile.vue'
-import EditProfile from './pages/editprofile.vue'
+
+import Profile from './pages/profile/profile.vue'
+import EditProfile from './pages/profile/editprofile.vue'
 import EditKontak from './pages/edit-kontak.vue'
 import TambahAlamat from './pages/tambah-alamat.vue'
-import Terkirim from './pages/progress-selesai.vue'
-import DetailBarang from './pages/detailproduct.vue'
-// import Toolbar from './pages/component/toolbar.vue'
+
+import Insertproduct from './pages/product/insertproduct'
+import DetailBarang from './pages/product/detailproduct'
 
 export default [
   {
@@ -35,8 +38,12 @@ export default [
     component: Main
   },
   {
-    path: "/progress/",
-    component: Progress
+    path: "/process/",
+    component: Process
+  },
+  {
+    path: "/finish/",
+    component: Finish
   },
   {
     path: "/profile/",
@@ -67,15 +74,7 @@ export default [
     component: TambahAlamat
   },
   {
-    path: "/terkirim/",
-    component: Terkirim
-  },
-  {
     path: "/detailbarang/",
     component: DetailBarang
   }
-  //   {
-  //       path: '/toolbar/',
-  //       component: Toolbar
-  //   }
 ];

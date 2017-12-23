@@ -19,127 +19,38 @@
 
         <!-- ini buat semacam header dibawah -->
         <f7-toolbar bottom tabbed tabbar inner>
-            <f7-link tab-link="#home" active>
-                <f7-icon ion="android-home" size="22px"></f7-icon>
-            </f7-link>
-            <f7-link href="/progress/">
-                <f7-icon ion="android-time" size="22px"></f7-icon>
-            </f7-link>
-            <f7-link href="/about/">
-                <f7-icon ion="help-circled" size="22px"></f7-icon>
-            </f7-link>
-            <f7-link href="/profile/">
-                <f7-icon ion="android-person" size="22px"></f7-icon>
-            </f7-link>
+        <base-toolbar></base-toolbar>
         </f7-toolbar>
-
         
-        <f7-fab class="btn__floated" color="pink" href="/insertproduct/">
-            <!-- <f7-link href="/insertproduct/"> -->
+        <f7-fab class="btn__floated" color="orange" href="/insertproduct/">
             <f7-icon icon="icon-plus"></f7-icon>
-            <!-- </f7-link> -->
         </f7-fab>
 
-        <!-- <f7-button raised color="orange" fill href="/insertproduct/" class="round">
-             <f7-icon icon="icon-plus"></f7-icon>
-        </f7-button> -->
-        
-        <!-- <f7-card href="/insertproduct/">
-            <f7-list class="list__margin" >
-                <f7-list-item>
-                    <a href="/insertproduct/">
-                    <div>
-                        <img src="#" width="50" height="50">
-                    </div>
-                    <div class="title">Lego Badman</div>
-                    </a>             
-                </f7-list-item>
-            </f7-list>
-        </f7-card>
-
-        <f7-block>
-            <f7-list>
-                <f7-list-item>
-                    <f7-input type="text" placeholder="nama"></f7-input>
-                    <f7-button>hai</f7-button>
-                </f7-list-item>
-            </f7-list>
-        </f7-block> -->
-
-
-<h3 class="padding-left">LELANG HARI INI</h3>
-<!-- list-block buat bikin item -->
-<div class="list-block media-list bg__list inset">
-  <ul>
-    <li>
-      <a href="/detailbarang/" class="item-link item-content">
-        <div class="item-media">
-            <img src="#" width="50" height="50" class="padding-right">
-        </div>
-        <div class="item-inner">
-          <div class="item-title-row">
-            <div class="item-title">NAMA BARANG</div>
-          </div>
-          <!-- <div class="item-subtitle">Open Bid</div> -->
-          
-          <!-- ini open bidnya ngambil data dari item yg di upload -->
-          <div>Open Bid Rp 10.000,-</div>
-          <br>
-        </div>
-      </a>
-    </li>
-  </ul>
-</div>
-
-<div class="list-block media-list bg__list inset">
-  <ul>
-    <li>
-      <a href="/detailbarang/" class="item-link item-content">
-        <div class="item-media">
-            <img src="#" width="50" height="50" class="padding-right">
-        </div>
-        <div class="item-inner">
-          <div class="item-title-row">
-            <div class="item-title">NAMA BARANG</div>
-          </div>
-          <!-- <div class="item-subtitle">Open Bid</div> -->
-          
-          <!-- ini open bidnya ngambil data dari item yg di upload -->
-          <div>Open Bid Rp 10.000,-</div>
-          <br>
-        </div>
-      </a>
-    </li>
-  </ul>
-</div>  
-
-
-<!-- Media list block has additional "media-list" class -->
-<!-- <div class="list-block media-list">
-    <ul>
-        <li>
-            <div class="item-content">
+        <h3 class="padding-left">LELANG HARI INI</h3>
+        <!-- list-block buat bikin item -->
+        <div class="list-block media-list bg__list inset">
+        <ul>
+            <li v-for="item in items" :key="item.id">
+            <a href="/detailbarang/" class="item-link item-content">
                 <div class="item-media">
-                    <img src="path/to/img.jpg">
+                    <img src=" item.img_url " width="50" height="50" class="padding-right">
                 </div>
                 <div class="item-inner">
-                    <div class="item-title-row">
-                        <div class="item-title">Element title</div>
-                        <div class="item-after">Element label</div>
-                    </div>
-                    <div class="item-subtitle">Subtitle</div>
-                    <div class="item-text">Additional description text</div>
+                <div class="item-title-row">
+                    <div class="item-title">{{ item.name }}</div>
                 </div>
-            </div>
-        </li>
-    </ul>
-</div>   -->
-
+                <div>Open Bid Rp {{ item.open_bid }},-</div>
+                <br>
+                </div>
+            </a>
+            </li>
+        </ul>
+        </div>  
+      
     </f7-page>  
-
 </template>
 
-<style>
+<style scoped>
     .btn__floated {
         margin-bottom: 50px;
     }
@@ -178,13 +89,27 @@
     .center{
         text-align: center;
     }
-
-
 </style>
 
 <script>
+import Toolbar from '../components/Toolbar'
+
 export default {
-    name : 'Main'
+    name : 'Main',
+    components: {
+        'base-toolbar': Toolbar
+    },
+    data(){
+        let objek = [
+          { _id : 1, name : 'Lego Star Wars',open_bid:20000},
+          { _id : 2, name : 'Squishy 9Gag - Beruang Kuning',open_bid:50000,img_url:'https://beon.kulelang.id/uploads/product/b6f3379e6ab5daf8762feafb879ce9b9.JPG'},
+          { _id : 3, name : 'HG IBO Kimaris Vidar',open_bid:60000} 
+        ]
+        return {
+            items : objek,
+            item : ''
+        }
+    }
 }
 
 </script>

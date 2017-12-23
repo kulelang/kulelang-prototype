@@ -1,22 +1,10 @@
 <template>
     <f7-page>
+
         <f7-toolbar bottom tabbed tabbar inner>
-            <f7-link href="/main/">
-                <f7-icon ion="android-home" size="22px"></f7-icon>
-            </f7-link>
-            <f7-link tab-link="#progress">
-                <f7-icon ion="android-time" size="22px"></f7-icon>
-            </f7-link>
-            <f7-link href="/about/">
-                <f7-icon ion="help-circled" size="22px"></f7-icon>
-            </f7-link>
-            <f7-link href="/profile/" active>
-                <f7-icon ion="android-person" size="22px"></f7-icon>
-            </f7-link>
+        <toolbar></toolbar>
         </f7-toolbar>
 
-        <!-- <f7-navbar back-link="Kembali">
-        </f7-navbar> -->
          <f7-navbar >
             <f7-nav-left>
                 <f7-link icon="icon-bars" open-panel="left"></f7-link>
@@ -35,23 +23,15 @@
         </f7-panel>
 
         <f7-toolbar top tabbed tabbar>
-            <f7-link tab-link="#progress">
+            <f7-link>
                 <f7-icon ion="android-time" size="20px"></f7-icon>Progress
             </f7-link>
-            <f7-link href="/terkirim/">
+            <f7-link href="/finish/">
                 <f7-icon ion="android-done" size="22px"></f7-icon>Selesai
             </f7-link>
         </f7-toolbar>
 
-<br><br><br>
-        <!-- <f7-list class="list__margin">
-            <f7-list-item>
-                <div class="square"></div>    
-                <div>Nama Barang</div>
-                <div></div>
-                <div></div>
-            </f7-list-item>
-        </f7-list> -->
+<div class="list-block media-list inset">
         <div class="card facebook-card">
             <div class="card-header">
                 <div class="facebook-avatar"><img src="" width="50" height="50"></div>
@@ -81,10 +61,7 @@
                 </div>
             </div>
         </div>
- 
-
-
-        
+</div>
     </f7-page>  
 </template>
 
@@ -121,12 +98,6 @@
   }  
 </style>
 
-<script>
-export default {
-  name:'Progress'
-}
-</script>
-
 <style>
     .btn__floated{
         margin-bottom: 50px;
@@ -137,7 +108,13 @@ export default {
 </style>
 
 <script>
+
+import Toolbar from '../../components/Toolbar'
+
 export default {
-  name: 'Progress'
+  name: 'Process',
+  components : {
+      'toolbar' : Toolbar
+  }
 }
 </script>

@@ -1,12 +1,10 @@
 <template>
 <f7-page>
-    <f7-navbar title="Kulelang">
+    <f7-navbar title="Buat Lelang">
         <f7-nav-right>
             <f7-link icon="icon-bars" open-panel="right"></f7-link>
         </f7-nav-right>
     </f7-navbar>
-
-
   <!-- ini buat semacam header dibawah -->
         <f7-toolbar bottom tabbed tabbar inner>
             <f7-link href="/main" active>
@@ -23,11 +21,6 @@
             </f7-link>
         </f7-toolbar>
 
-<f7-list>
-    
-        <h2>Buat Lelang</h2>
-
-</f7-list>
         <f7-card>
             <f7-card-header class="fontbold">Anda Ingin Lelang Apa Hari Ini?</f7-card-header>
             <f7-card-content>
