@@ -1,10 +1,21 @@
 <template>
 <f7-page>
-    <f7-navbar title="Kulelang">
-        <f7-nav-right>
-            <f7-link icon="icon-bars" open-panel="right"></f7-link>
-        </f7-nav-right>
-    </f7-navbar>
+    <f7-navbar >
+            <f7-nav-left>
+                <f7-link icon="icon-bars" open-panel="left"></f7-link>
+                <p>Buat Barang Lelang</p>
+            </f7-nav-left>
+            
+        </f7-navbar>
+            <!-- Left Panel with Reveal effect -->
+        <f7-panel left cover>
+            <!-- Left panel content goes here -->
+            <div class="content-block">
+                 <p>Left Panel content here</p>
+                    <p><a href="#" class="panel-close">Close me</a>
+                 </p>
+            </div>
+        </f7-panel>
 
 
   <!-- ini buat semacam header dibawah -->

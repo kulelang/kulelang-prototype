@@ -1,14 +1,14 @@
 <template>
     <f7-page class="bg" >
-        <f7-navbar >
-            <f7-nav-left>
+        <f7-navbar>
+            <f7-nav-left >
                 <f7-link icon="icon-bars" open-panel="left"></f7-link>
                 <p>Halaman Utama</p>
             </f7-nav-left>
             
         </f7-navbar>
             <!-- Left Panel with Reveal effect -->
-        <f7-panel left cover>
+        <f7-panel left >
             <!-- Left panel content goes here -->
             <div class="content-block">
                  <p>Left Panel content here</p>
@@ -34,7 +34,7 @@
         </f7-toolbar>
 
         
-        <f7-fab class="btn__floated" color="pink" href="/insertproduct/">
+        <f7-fab class="btn__floated" color="orange" href="/insertproduct/">
             <!-- <f7-link href="/insertproduct/"> -->
             <f7-icon icon="icon-plus"></f7-icon>
             <!-- </f7-link> -->
