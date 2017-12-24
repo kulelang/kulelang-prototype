@@ -124,7 +124,7 @@
 </style>
 
 <script>
-import Toolbar from './component/toolbar.vue'
+import Toolbar from '../components/Toolbar'
 export default {
     name: 'About'
 }
