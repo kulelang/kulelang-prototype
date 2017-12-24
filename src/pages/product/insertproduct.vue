@@ -1,5 +1,6 @@
 <template>
 <f7-page>
+<<<<<<< HEAD:src/pages/insertproduct.vue
     <f7-navbar >
             <f7-nav-left>
                 <f7-link icon="icon-bars" open-panel="left"></f7-link>
@@ -18,6 +19,13 @@
         </f7-panel>
 
 
+=======
+    <f7-navbar title="Buat Lelang">
+        <f7-nav-right>
+            <f7-link icon="icon-bars" open-panel="right"></f7-link>
+        </f7-nav-right>
+    </f7-navbar>
+>>>>>>> 915c170fe2b3957a2a17e13ba1d0ea7487051280:src/pages/product/insertproduct.vue
   <!-- ini buat semacam header dibawah -->
         <f7-toolbar bottom tabbed tabbar inner>
             <f7-link href="/main" active>
@@ -34,11 +42,6 @@
             </f7-link>
         </f7-toolbar>
 
-<f7-list>
-    
-        <h2>Buat Lelang</h2>
-
-</f7-list>
         <f7-card>
             <f7-card-header class="fontbold">Anda Ingin Lelang Apa Hari Ini?</f7-card-header>
             <f7-card-content>

@@ -15,9 +15,6 @@
              <p><a href="#" class="panel-close" >Close me</a></p>
         </div>
       </f7-panel>
-
-     
-
         <h1 align="center">Minta Password</h1>
     <f7-block>
         <f7-list form>
@@ -26,8 +23,6 @@
             </f7-list-item>
             <br>
             <f7-button color="green" fill  href="#">Minta Password</f7-button>
-            
-            
         </f7-list>
     </f7-block>
     
