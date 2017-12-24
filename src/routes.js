@@ -10,8 +10,8 @@ import Lupapassword from './pages/lupapassword.vue'
 
 import Profile from './pages/profile/profile.vue'
 import EditProfile from './pages/profile/editprofile.vue'
-import EditKontak from './pages/edit-kontak.vue'
-import TambahAlamat from './pages/tambah-alamat.vue'
+import EditKontak from './pages/profile/edit-kontak.vue'
+import TambahAlamat from './pages/profile/tambah-alamat.vue'
 
 import Insertproduct from './pages/product/insertproduct'
 import DetailBarang from './pages/product/detailproduct'

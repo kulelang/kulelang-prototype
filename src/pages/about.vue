@@ -1,14 +1,14 @@
 <template>
   <f7-page>
-       <f7-navbar >
-            <f7-nav-right>
-                <f7-link icon="icon-bars" open-panel="right"></f7-link>
+       <f7-navbar>
+            <f7-nav-left>
+                <f7-link icon="icon-bars" open-panel="left"></f7-link>
                 <p>Bantuan</p>
-            </f7-nav-right>
+            </f7-nav-left>
             
         </f7-navbar>
             <!-- Left Panel with Reveal effect -->
-        <f7-panel right cover>
+        <f7-panel left cover>
             <!-- Left panel content goes here -->
             <div class="content-block">
                  <p>Left Panel content here</p>
@@ -17,7 +17,11 @@
             </div>
         </f7-panel>
 
-    <f7-toolbar bottom tabbed tabbar inner>
+        <f7-toolbar bottom tabbed tabbar inner>
+        <toolbar></toolbar>
+        </f7-toolbar>
+
+    <!-- <f7-toolbar bottom tabbed tabbar inner>
             <f7-link href="/main/">
                 <f7-icon ion="android-home" size="22px"></f7-icon>
             </f7-link>
@@ -30,7 +34,7 @@
             <f7-link href="/profile/" active>
                 <f7-icon ion="android-person" size="22px"></f7-icon>
             </f7-link>
-    </f7-toolbar>
+    </f7-toolbar> -->
     
     <h1 align="center">Frequently Asked Question</h1>
     <f7-list accordion>
@@ -125,7 +129,10 @@
 
 <script>
 import Toolbar from '../components/Toolbar'
-export default {
-    name: 'About'
+export default{
+    name: 'About',
+    components: {
+        'toolbar' : Toolbar
+    }
 }
 </script>

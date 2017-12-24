@@ -1,6 +1,6 @@
 // menampilkan profile
 <template>
-  <f7-page>
+  <f7-page class="bg">
      <f7-navbar >
             <f7-nav-left>
                 <f7-link icon="icon-bars" open-panel="left"></f7-link>
@@ -88,9 +88,14 @@
 </template>
 
 <script>
+  import Toolbar from '../../components/Toolbar'
+
   export default {
-        name:'TambahAlamat'
+    name: 'TambahAlamat',
+    components : {
+        'toolbar' : Toolbar
     }
+}
 
 </script>
 

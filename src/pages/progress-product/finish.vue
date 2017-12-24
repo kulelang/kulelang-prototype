@@ -1,10 +1,23 @@
 <template>
-    <f7-page>
+    <f7-page class="bg">
 
+        <f7-navbar>
+            <f7-nav-left>
+                <f7-link icon="icon-bars" open-panel="left"></f7-link>
+                <p>Pesanan</p>
+            </f7-nav-left>
             
-
-        <f7-navbar back-link="Kembali">
         </f7-navbar>
+            <!-- Left Panel with Reveal effect -->
+        <f7-panel left cover>
+            <!-- Left panel content goes here -->
+            <div class="content-block">
+                 <p>Left Panel content here</p>
+                    <p><a href="#" class="panel-close">Close me</a>
+                 </p>
+            </div>
+        </f7-panel>
+
         <f7-toolbar top tabbed tabbar>
             <f7-link href="/process/">
                 <f7-icon ion="android-time" size="20px"></f7-icon>Progress
@@ -14,15 +27,13 @@
             </f7-link>
         </f7-toolbar>
 
-<br><br><br>
-        <!-- <f7-list class="list__margin">
-            <f7-list-item>
-                <div class="square"></div>    
-                <div>Nama Barang</div>
-                <div></div>
-                <div></div>
-            </f7-list-item>
-        </f7-list> -->
+        <f7-toolbar bottom tabbed tabbar inner>
+            <toolbar></toolbar>
+        </f7-toolbar>
+
+
+        <div class="padding"></div>
+        <div class="list-block media-list inset">
         <div class="card facebook-card">
             <div class="card-header">
                 <div class="facebook-avatar"><img src="" width="50" height="50"></div>
@@ -37,6 +48,7 @@
                 </div>
             </div>
         </div>
+    </div>
         
      
  
@@ -83,6 +95,7 @@
   .facebook-card .card-content-inner {
     padding: 15px 10px;
   }  
+  
 </style>
 
 <script>
@@ -104,6 +117,9 @@ export default {
 import Toolbar from '../../components/Toolbar'
 
 export default {
-  name: 'Finish'
+  name: 'Finish',
+  components : {
+      'toolbar' : Toolbar
+  }
 }
 </script>

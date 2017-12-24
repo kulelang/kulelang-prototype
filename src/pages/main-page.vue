@@ -23,10 +23,7 @@
         </f7-toolbar>
         
         <f7-fab class="btn__floated" color="orange" href="/insertproduct/">
-<<<<<<< HEAD
-            <!-- <f7-link href="/insertproduct/"> -->
-=======
->>>>>>> 915c170fe2b3957a2a17e13ba1d0ea7487051280
+
             <f7-icon icon="icon-plus"></f7-icon>
         </f7-fab>
 

@@ -1,7 +1,7 @@
 <template>
-    <f7-page>
-<<<<<<< HEAD:src/pages/progress-page.vue
-        <f7-navbar >
+    <f7-page class="bg">
+        
+        <f7-navbar>
             <f7-nav-left>
                 <f7-link icon="icon-bars" open-panel="left"></f7-link>
                 <p>Pesanan</p>
@@ -17,38 +17,13 @@
                  </p>
             </div>
         </f7-panel>
-=======
->>>>>>> 915c170fe2b3957a2a17e13ba1d0ea7487051280:src/pages/progress-product/process.vue
 
         <f7-toolbar bottom tabbed tabbar inner>
         <toolbar></toolbar>
         </f7-toolbar>
 
-<<<<<<< HEAD:src/pages/progress-page.vue
-        <!-- <f7-navbar back-link="Kembali">
-        </f7-navbar> -->
-         
-=======
-         <f7-navbar >
-            <f7-nav-left>
-                <f7-link icon="icon-bars" open-panel="left"></f7-link>
-                <p>Pesanan</p>
-            </f7-nav-left>
-            
-        </f7-navbar>
-            <!-- Left Panel with Reveal effect -->
-        <f7-panel left cover>
-            <!-- Left panel content goes here -->
-            <div class="content-block">
-                 <p>Left Panel content here</p>
-                    <p><a href="#" class="panel-close">Close me</a>
-                 </p>
-            </div>
-        </f7-panel>
->>>>>>> 915c170fe2b3957a2a17e13ba1d0ea7487051280:src/pages/progress-product/process.vue
-
         <f7-toolbar top tabbed tabbar>
-            <f7-link>
+            <f7-link tab-link="#process">
                 <f7-icon ion="android-time" size="20px"></f7-icon>Progress
             </f7-link>
             <f7-link href="/finish/">
@@ -56,7 +31,9 @@
             </f7-link>
         </f7-toolbar>
 
-<div class="list-block media-list inset">
+
+    <div class="padding"></div>
+    <div class="list-block media-list inset">
         <div class="card facebook-card">
             <div class="card-header">
                 <div class="facebook-avatar"><img src="" width="50" height="50"></div>
@@ -86,11 +63,15 @@
                 </div>
             </div>
         </div>
-</div>
+    </div>
+    
     </f7-page>  
 </template>
 
 <style>
+  .bg{
+      background-color: #ECECEC;
+  }
   .facebook-card .card-header {
     display: block;
     padding: 10px;
@@ -121,6 +102,9 @@
   .facebook-card .card-content-inner {
     padding: 15px 10px;
   }  
+  .padding{
+      padding-top: 30px;
+  }
 </style>
 
 <style>

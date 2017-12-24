@@ -1,6 +1,6 @@
 // menampilkan profile
 <template>
-  <f7-page>
+  <f7-page class="bg">
      <f7-navbar >
             <f7-nav-left>
                 <f7-link icon="icon-bars" open-panel="left"></f7-link>
@@ -19,19 +19,8 @@
         </f7-panel>
 
       <f7-toolbar bottom tabbed tabbar inner>
-            <f7-link href="/main/">
-                <f7-icon ion="android-home" size="22px"></f7-icon>
-            </f7-link>
-            <f7-link href="/progress/">
-                <f7-icon ion="android-time" size="22px"></f7-icon>
-            </f7-link>
-            <f7-link href="/about/">
-                <f7-icon ion="help-circled" size="22px"></f7-icon>
-            </f7-link>
-            <f7-link tab-link="#profile" active>
-                <f7-icon ion="android-person" size="22px"></f7-icon>
-            </f7-link>
-        </f7-toolbar>
+        <toolbar></toolbar>
+      </f7-toolbar>
 
       
       <f7-card>
@@ -53,7 +42,7 @@
            </f7-list>
         </f7-card-content>
         <f7-card-footer>
-          <f7-button round color="pink" fill class="round" href="/editkontak/">Ubah</f7-button>
+          <f7-button round color="pink" fill  href="/editkontak/">Ubah</f7-button>
         </f7-card-footer>
       </f7-card>
 
@@ -80,24 +69,25 @@
            </f7-list>
         </f7-card-content>
         <f7-card-footer>
-          <f7-button round color="pink" fill  href="/editprofile/">Ubah</f7-button>
-          <f7-button round color="blue" fill  href="/tambahalamat/">Tambah Alamat Baru</f7-button>
+          <f7-button color="pink" fill  href="/editprofile/">Ubah</f7-button>
+          <f7-button color="blue" fill  href="/tambahalamat/">Tambah Alamat Baru</f7-button>
         </f7-card-footer>
-        <f7-card-footer>
-          
-          
-        </f7-card-footer>
+      
       </f7-card>
-
 
     
   </f7-page>
 </template>
 
 <script>
-  export default {
-    name:'Profile'
+import Toolbar from '../../components/Toolbar'
+
+export default {
+  name: 'Profile',
+  components : {
+      'toolbar' : Toolbar
   }
+}
 
 </script>
 

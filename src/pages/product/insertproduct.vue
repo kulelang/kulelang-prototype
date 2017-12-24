@@ -1,6 +1,5 @@
 <template>
-<f7-page>
-<<<<<<< HEAD:src/pages/insertproduct.vue
+<f7-page class="bg">
     <f7-navbar >
             <f7-nav-left>
                 <f7-link icon="icon-bars" open-panel="left"></f7-link>
@@ -17,29 +16,10 @@
                  </p>
             </div>
         </f7-panel>
-
-
-=======
-    <f7-navbar title="Buat Lelang">
-        <f7-nav-right>
-            <f7-link icon="icon-bars" open-panel="right"></f7-link>
-        </f7-nav-right>
-    </f7-navbar>
->>>>>>> 915c170fe2b3957a2a17e13ba1d0ea7487051280:src/pages/product/insertproduct.vue
-  <!-- ini buat semacam header dibawah -->
+        
+        <!-- ini buat semacam header dibawah -->
         <f7-toolbar bottom tabbed tabbar inner>
-            <f7-link href="/main" active>
-                <f7-icon ion="android-home" size="22px"></f7-icon>
-            </f7-link>
-            <f7-link href="/progress/">
-                <f7-icon ion="android-time" size="22px"></f7-icon>
-            </f7-link>
-            <f7-link href="/about/">
-                <f7-icon ion="help-circled" size="22px"></f7-icon>
-            </f7-link>
-            <f7-link href="/profile/">
-                <f7-icon ion="android-person" size="22px"></f7-icon>
-            </f7-link>
+            <toolbar></toolbar>
         </f7-toolbar>
 
         <f7-card>
@@ -108,11 +88,11 @@
               </f7-list-item>
             </f7-list> 
              
-             <f7-list form>
+             <f7-list>
               <f7-list-item >
                 <f7-label>Kondisi</f7-label>
-                <f7-list-item checkbox name="my-checkbox" value="1" title="Baru"></f7-list-item>
-                <f7-list-item checkbox name="my-checkbox" value="2" title="Bekas"></f7-list-item>
+                <f7-list-item checkbox name="my-checkbox" value="1">Baru</f7-list-item>
+                <f7-list-item checkbox name="my-checkbox" value="2">Bekas</f7-list-item>
               </f7-list-item>
             </f7-list> 
             
@@ -162,11 +142,11 @@
           </f7-card-content>
         </f7-card>
 
-        <f7-card>
+        
           <f7-button round color="green" fill  href="#">Buat Lelang</f7-button>
           <br>
           <f7-button round color="red" fill  href="#">Batal</f7-button>
-        </f7-card>
+        
 
 
 <!-- <div id='example-3'>
@@ -185,29 +165,14 @@
 </template>
 
 <script>
-export default {
-    name:'Insertproduct'
-}
+import Toolbar from '../../components/Toolbar'
 
-  // export default {
-  //   data: function () {
-  //     return {
-  //       sorting: false,
-  //       items: [1, 2, 3, 4, 5]
-  //     }
-  //   },
-  //   methods: {
-  //     onOpen: function () {
-  //       this.sorting = !this.sorting;
-  //     },
-  //     onClose: function () {
-  //       this.sorting = !this.sorting;
-  //     },
-  //     onSort: function (event, indexes) {
-  //         console.log('sort', indexes);
-  //     },
-  //   }
-  // }
+export default {
+  name: 'InsertProduct',
+  components : {
+      'toolbar' : Toolbar
+  }
+}
 </script>
 
 <style>
