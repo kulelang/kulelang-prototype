@@ -15,18 +15,16 @@
               <f7-navbar title="Kulelang Id"></f7-navbar>
               <div class="page-content">
                 <!-- Slider -->
-                <div class="swiper-container">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide"><span>Slide 1</span></div>
-                    <div class="swiper-slide"><span>Slide 2</span></div>
-                    <div class="swiper-slide"><span>Slide 3</span></div>
-                    <div class="swiper-slide"><span>Slide 4</span></div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
+                <f7-swiper>
+                  <f7-swiper-slide>Slide 1 iki wes iso di slide loo</f7-swiper-slide>
+                  <f7-swiper-slide>Slide 2 loo kan isok </f7-swiper-slide>
+                  <f7-swiper-slide>Slide 3
+                      <f7-button class="test" big fill theme="cyan" href="/signup/" active>Go Demo</f7-button>
+                  </f7-swiper-slide>
+                </f7-swiper>
             </div>
                   <!-- Gambar Disini -->
-                  <f7-button class="test" big fill theme="cyan" href="/signup/" active>Go Demo</f7-button>
+                  
 
             </f7-page>
           </f7-pages>

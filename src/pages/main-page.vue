@@ -104,7 +104,8 @@ export default {
         let objek = [
           { _id : 1, name : 'Lego Star Wars',open_bid:20000},
           { _id : 2, name : 'Squishy 9Gag - Beruang Kuning',open_bid:50000,img_url:'https://beon.kulelang.id/uploads/product/b6f3379e6ab5daf8762feafb879ce9b9.JPG'},
-          { _id : 3, name : 'HG IBO Kimaris Vidar',open_bid:60000} 
+          { _id : 3, name : 'HG IBO Kimaris Vidar',open_bid:60000},
+          { _id : 4, name : 'Action figure', open_bid:7000}
         ]
         return {
             items : objek,
