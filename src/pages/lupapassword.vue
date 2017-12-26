@@ -3,18 +3,17 @@
   <f7-page>
     <!-- <f7-navbar back-link="Back" sliding></f7-navbar> -->
       <f7-navbar back-link="Password Dikirim" sliding>
-            <f7-nav-right>
+            <!-- <f7-nav-right>
                 <f7-link icon="icon-bars" open-panel="right"></f7-link>
-            </f7-nav-right>
+            </f7-nav-right> -->
       </f7-navbar>
 
-      <f7-panel right cover>
-        <!-- Left panel content goes here -->
+      <!-- <f7-panel right cover>
         <div class="content-block">
              <p>PROFILE</p>
              <p><a href="#" class="panel-close" >Close me</a></p>
         </div>
-      </f7-panel>
+      </f7-panel> -->
         <h1 align="center">Minta Password</h1>
     <f7-block>
         <f7-list form>

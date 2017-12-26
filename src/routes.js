@@ -16,6 +16,9 @@ import TambahAlamat from './pages/profile/tambah-alamat.vue'
 import Insertproduct from './pages/product/insertproduct'
 import DetailBarang from './pages/product/detailproduct'
 
+import Search from './pages/search.vue'
+import Cart from './pages/cart.vue'
+
 export default [
   {
     path: "/signup",
@@ -76,5 +79,13 @@ export default [
   {
     path: "/detailbarang/",
     component: DetailBarang
+  },
+  {
+    path: "/search/",
+    component: Search
+  },
+  {
+    path: "/cart/",
+    component: Cart
   }
 ];

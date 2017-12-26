@@ -7,12 +7,12 @@
                 <p>Tambah Alamat</p>
             </f7-nav-left>
             <f7-nav-right class="padding-right">
-              <f7-link href="/main/">
-                <f7-icon ion="android-search" size="22px"></f7-icon>
-              </f7-link>
-              <f7-link href="/main/">
-                <f7-icon ion="android-cart" size="22px"></f7-icon>
-              </f7-link>
+                <f7-link href="/search/">
+                    <f7-icon ion="search"></f7-icon>
+                </f7-link>
+                <f7-link href="/cart/">
+                    <f7-icon ion="android-cart"></f7-icon>
+                </f7-link> 
             </f7-nav-right>
             
         </f7-navbar>

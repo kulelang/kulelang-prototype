@@ -5,15 +5,23 @@
                 <f7-link icon="icon-bars" open-panel="left"></f7-link>
                 <p>Buat Barang Lelang</p>
             </f7-nav-left>
-            
+            <f7-nav-right class="padding-right">
+                <f7-link href="/search/">
+                    <f7-icon ion="search"></f7-icon>
+                </f7-link>
+                <f7-link href="/cart/">
+                    <f7-icon ion="android-cart"></f7-icon>
+                </f7-link> 
+            </f7-nav-right>
         </f7-navbar>
             <!-- Left Panel with Reveal effect -->
         <f7-panel left cover>
             <!-- Left panel content goes here -->
             <div class="content-block">
-                 <p>Left Panel content here</p>
+                 <!-- <p>Left Panel content here</p>
                     <p><a href="#" class="panel-close">Close me</a>
-                 </p>
+                 </p> -->
+                 <f7-link close-panel>Close Panel</f7-link>
             </div>
         </f7-panel>
         
@@ -58,14 +66,16 @@
         <f7-card>
           <f7-card-header class="fontbold">Gambar Produk</f7-card-header>
           <f7-card-content>
-            <f7-list class="list__margin">
-            <f7-list-item>
-                <div class="square"></div>
-                 <div class="square"></div>
-                <div class="title">Add Image</div>             
-            </f7-list-item>
-             <f7-link text="Hapus" color="blue"></f7-link>
-        </f7-list>
+            <div >
+              <div v-if="!image">
+                <h2>Select an image</h2>
+                <input type="file" @change="onFileChange">
+              </div>
+              <div v-else>
+                <img :src="image" />
+                <button @click="removeImage">Remove image</button>
+              </div>
+            </div>
            
           </f7-card-content>
         </f7-card>
@@ -149,17 +159,6 @@
         
 
 
-<!-- <div id='example-3'>
-  <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
-  <label for="jack">Jack</label>
-  <input type="checkbox" id="john" value="John" v-model="checkedNames">
-  <label for="john">John</label>
-  <input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
-  <label for="mike">Mike</label>
-  <br>
-  <span>Checked names: {{ checkedNames }}</span>
-</div> -->
-
 
 </f7-page>
 </template>
@@ -171,7 +170,34 @@ export default {
   name: 'InsertProduct',
   components : {
       'toolbar' : Toolbar
+  },
+  // new Vue({
+  // el: '#app',
+  data: {
+    image: ''
+  },
+  methods: {
+    onFileChange(e) {
+      var files = e.target.files || e.dataTransfer.files;
+      if (!files.length)
+        return;
+      this.createImage(files[0]);
+    },
+    createImage(file) {
+      var image = new Image();
+      var reader = new FileReader();
+      var vm = this;
+
+      reader.onload = (e) => {
+        vm.image = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    },
+    removeImage: function (e) {
+      this.image = '';
+    }
   }
+// })
 }
 </script>
 
@@ -181,6 +207,16 @@ export default {
     height: 30px;
     width: 30px;
 
+  }
+  
+  .img {
+    width: 30%;
+    margin: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .button {
+    
   }
 </style>
 

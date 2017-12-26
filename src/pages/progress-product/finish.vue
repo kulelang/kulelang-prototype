@@ -6,7 +6,14 @@
                 <f7-link icon="icon-bars" open-panel="left"></f7-link>
                 <p>Pesanan</p>
             </f7-nav-left>
-            
+            <f7-nav-right class="padding-right">
+                <f7-link href="/search/">
+                    <f7-icon ion="search"></f7-icon>
+                </f7-link>
+                <f7-link href="/cart/">
+                    <f7-icon ion="android-cart"></f7-icon>
+                </f7-link> 
+            </f7-nav-right>
         </f7-navbar>
             <!-- Left Panel with Reveal effect -->
         <f7-panel left cover>

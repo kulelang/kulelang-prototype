@@ -1,10 +1,10 @@
 <template>
 <f7-page>
     <f7-navbar back-link="Back"></f7-navbar>
-    <h1 align="center">DAFTAR</h1>
+    <h2 align="center">DAFTAR</h2>
     <f7-block>
         <f7-list form>
-            <h2>Buat Akun Baru</h2>
+            <h3>Buat Akun Baru</h3>
         </f7-list>
         
         <f7-list form>

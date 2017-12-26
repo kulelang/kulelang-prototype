@@ -5,15 +5,24 @@
                 <f7-link icon="icon-bars" open-panel="left"></f7-link>
                 <p>Halaman Utama</p>
             </f7-nav-left>
-            
+
+            <f7-nav-right class="padding-right">
+                <f7-link href="/search/">
+                    <f7-icon ion="search"></f7-icon>
+                </f7-link>
+                <f7-link href="/cart/">
+                    <f7-icon ion="android-cart"></f7-icon>
+                </f7-link> 
+            </f7-nav-right>
         </f7-navbar>
             <!-- Left Panel with Reveal effect -->
         <f7-panel left >
             <!-- Left panel content goes here -->
             <div class="content-block">
-                 <p>Left Panel content here</p>
+                 <!-- <p>Left Panel content here</p>
                     <p><a href="#" class="panel-close">Close me</a>
-                 </p>
+                 </p> -->
+                 <f7-link close-panel>Close Panel</f7-link>
             </div>
         </f7-panel>
 
@@ -26,6 +35,8 @@
 
             <f7-icon icon="icon-plus"></f7-icon>
         </f7-fab>
+
+        
 
         <h3 class="padding-left">LELANG HARI INI</h3>
         <!-- list-block buat bikin item -->
