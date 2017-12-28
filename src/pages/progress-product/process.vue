@@ -1,13 +1,10 @@
 <template>
     <f7-page class="bg">
-        
         <f7-navbar>
             <f7-nav-left icon="icon-bars" back-link="Kembali">
             </f7-nav-left>
         </f7-navbar>
-            <!-- Left Panel with Reveal effect -->
         <f7-panel left cover>
-            <!-- Left panel content goes here -->
             <div class="content-block">
                  <p>Left Panel content here</p>
                     <p><a href="#" class="panel-close">Close me</a>
