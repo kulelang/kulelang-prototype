@@ -1,30 +1,13 @@
 <template>
-    <f7-page class="bg">
-        
-        <f7-navbar>
-            <f7-nav-left icon="icon-bars" back-link="Kembali">
-            </f7-nav-left>
-        </f7-navbar>
-            <!-- Left Panel with Reveal effect -->
-        <f7-panel left cover>
-            <!-- Left panel content goes here -->
-            <div class="content-block">
-                 <p>Left Panel content here</p>
-                    <p><a href="#" class="panel-close">Close me</a>
-                 </p>
-            </div>
-        </f7-panel>
-
+    <div>
         <f7-toolbar top tabbed tabbar>
             <f7-link tab-link="#process">
                 <f7-icon ion="android-time" size="20px"></f7-icon>Progress
             </f7-link>
-            <f7-link href="/finish/">
+            <f7-link href="">
                 <f7-icon ion="android-done" size="22px"></f7-icon>Selesai
             </f7-link>
         </f7-toolbar>
-
-
     <div class="padding"></div>
     <div class="list-block media-list inset">
         <div class="card facebook-card">
@@ -57,8 +40,7 @@
             </div>
         </div>
     </div>
-    
-    </f7-page>  
+    </div>
 </template>
 
 <style>
@@ -110,13 +92,7 @@
 </style>
 
 <script>
-
-import Toolbar from '../../components/Toolbar'
-
 export default {
-  name: 'Process',
-  components : {
-      'toolbar' : Toolbar
-  }
+    name : 'Progress',
 }
 </script>

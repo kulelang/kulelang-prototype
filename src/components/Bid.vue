@@ -1,42 +1,5 @@
 <template>
-    <f7-page class="bg" >
-        <f7-navbar>
-            <f7-nav-left >
-                <f7-link icon="icon-bars" open-panel="left"></f7-link>
-                <p>Halaman Utama</p>
-            </f7-nav-left>
-            <f7-nav-right class="padding-right">
-                <f7-link href="/search/">
-                    <f7-icon ion="search"></f7-icon>
-                </f7-link>
-                <f7-link href="/cart/">
-                    <f7-icon ion="android-cart"></f7-icon>
-                </f7-link> 
-            </f7-nav-right>
-        </f7-navbar>
-            <!-- Left Panel with Reveal effect -->
-        <f7-panel left >
-            <!-- Left panel content goes here -->
-            <div class="content-block">
-                 <!-- <p>Left Panel content here</p>
-                    <p><a href="#" class="panel-close">Close me</a>
-                 </p> -->
-                 <f7-link close-panel>Close Panel</f7-link>
-            </div>
-        </f7-panel>
-
-        <!-- ini buat semacam header dibawah -->
-        <f7-toolbar bottom tabbed tabbar inner>
-        <base-toolbar></base-toolbar>
-        </f7-toolbar>
-        
-        <f7-fab class="btn__floated" color="orange" href="/insertproduct/">
-
-            <f7-icon icon="icon-plus"></f7-icon>
-        </f7-fab>
-
-        
-
+        <div>
         <h3 class="padding-left">LELANG HARI INI</h3>
         <!-- list-block buat bikin item -->
         <div class="list-block media-list bg__list inset">
@@ -44,7 +7,7 @@
             <li v-for="item in items" :key="item.id">
             <a href="/detailbarang/" class="item-link item-content">
                 <div class="item-media">
-                    <img src=" item.img_url " width="50" height="50" class="padding-right">
+                    <img src="/" width="50" height="50" class="padding-right">
                 </div>
                 <div class="item-inner">
                 <div class="item-title-row">
@@ -57,8 +20,7 @@
             </li>
         </ul>
         </div>  
-      
-    </f7-page>  
+    </div>
 </template>
 
 <style scoped>
@@ -103,17 +65,12 @@
 </style>
 
 <script>
-import Toolbar from '../components/Toolbar'
-
 export default {
-    name : 'Main',
-    components: {
-        'base-toolbar': Toolbar
-    },
+    name : 'Bid',
     data(){
         let objek = [
           { _id : 1, name : 'Lego Star Wars',open_bid:20000},
-          { _id : 2, name : 'Squishy 9Gag - Beruang Kuning',open_bid:50000,img_url:'https://beon.kulelang.id/uploads/product/b6f3379e6ab5daf8762feafb879ce9b9.JPG'},
+          { _id : 2, name : 'Squishy 9Gag - Beruang Kuning',open_bid:50000},
           { _id : 3, name : 'HG IBO Kimaris Vidar',open_bid:60000},
           { _id : 4, name : 'Action figure', open_bid:7000}
         ]
@@ -123,7 +80,4 @@ export default {
         }
     }
 }
-
 </script>
-
-

@@ -20,7 +20,7 @@
             <f7-link href="/lupa" class="right">Lupa Password?</f7-link>
         </f7-list>
         
-        <f7-button href="/main" class="btn__margin" big fill theme="cyan"> Login</f7-button>
+        <f7-button href="/home/" class="btn__margin" big fill theme="cyan"> Login</f7-button>
         <br><br>
         <f7-button class="btn__margin" big fill color="red"> <i class="ion-social-googleplus-outline"></i> Login using google</f7-button>
         <br>

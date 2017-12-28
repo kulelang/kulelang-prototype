@@ -1,4 +1,3 @@
-import About from './pages/about.vue'
 import Main from './pages/main-page.vue'
 import Sign from './pages/sign.vue'
 import Signup from './pages/signup.vue'
@@ -8,7 +7,6 @@ import Finish from './pages/progress-product/finish'
 
 import Lupapassword from './pages/lupapassword.vue'
 
-import Profile from './pages/profile/profile.vue'
 import EditProfile from './pages/profile/editprofile.vue'
 import EditKontak from './pages/profile/edit-kontak.vue'
 import TambahAlamat from './pages/profile/tambah-alamat.vue'
@@ -18,6 +16,8 @@ import DetailBarang from './pages/product/detailproduct'
 
 import Search from './pages/search.vue'
 import Cart from './pages/cart.vue'
+
+import Home from './pages/home'
 
 export default [
   {
@@ -29,16 +29,8 @@ export default [
     component: Sign
   },
   {
-    path: "/about/",
-    component: About
-  },
-  {
-    path: "/form/",
-    component: About
-  },
-  {
     path: "/main/",
-    component: Main
+    component: Home
   },
   {
     path: "/process/",
@@ -47,10 +39,6 @@ export default [
   {
     path: "/finish/",
     component: Finish
-  },
-  {
-    path: "/profile/",
-    component: Profile
   },
   {
     path: "/editprofile/",
@@ -87,5 +75,9 @@ export default [
   {
     path: "/cart/",
     component: Cart
+  },
+  {
+    path : "/home/",
+    component  : Home
   }
 ];

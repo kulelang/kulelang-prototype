@@ -17,7 +17,7 @@
                 <!-- Slider -->
                 <f7-swiper pagination>
                   <f7-swiper-slide>Slide 1 iki wes iso di slide loo cobaen lek gak percaya -->
-                      <f7-button class="test" big fill theme="cyan" href="/signup/" active>Go Demo</f7-button>
+                      <f7-button class="test" big fill theme="cyan" href="/sign/" active>Go Demo</f7-button>
                   </f7-swiper-slide>
                   <f7-swiper-slide>Slide 2 loo kan isok </f7-swiper-slide>
                   <f7-swiper-slide>Slide 3
@@ -27,8 +27,6 @@
                 </f7-swiper>
             </div>
                   <!-- Gambar Disini -->
-                  
-
             </f7-page>
           </f7-pages>
         </f7-view>
