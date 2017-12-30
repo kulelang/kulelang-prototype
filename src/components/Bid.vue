@@ -1,5 +1,10 @@
 <template>
     <div>
+        <f7-fab class="btn__floated" color="orange" href="/insertproduct/">
+
+            <f7-icon icon="icon-plus"></f7-icon>
+        </f7-fab>
+
         <h3 class="padding-left">LELANG HARI INI</h3>
         <!-- list-block buat bikin item -->
         <div class="list-block media-list bg__list inset">
@@ -25,7 +30,7 @@
 
 <style scoped>
     .btn__floated {
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
     .list__margin {
         margin: 20px;

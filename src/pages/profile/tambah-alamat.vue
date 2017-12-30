@@ -1,45 +1,10 @@
 // menampilkan profile
 <template>
   <f7-page class="bg">
-     <f7-navbar >
-            <f7-nav-left>
-                <f7-link icon="icon-bars" open-panel="left"></f7-link>
-                <p>Tambah Alamat</p>
+     <f7-navbar>
+            <f7-nav-left icon="icon-bars" back-link="Kembali">
             </f7-nav-left>
-            <f7-nav-right class="padding-right">
-                <f7-link href="/search/">
-                    <f7-icon ion="search"></f7-icon>
-                </f7-link>
-                <f7-link href="/cart/">
-                    <f7-icon ion="android-cart"></f7-icon>
-                </f7-link> 
-            </f7-nav-right>
-            
-        </f7-navbar>
-            <!-- Left Panel with Reveal effect -->
-        <f7-panel left cover>
-            <!-- Left panel content goes here -->
-            <div class="content-block">
-                 <p>Left Panel content here</p>
-                    <p><a href="#" class="panel-close">Close me</a>
-                 </p>
-            </div>
-        </f7-panel>
-
-      <f7-toolbar bottom tabbed tabbar inner>
-            <f7-link href="/main/">
-                <f7-icon ion="android-home" size="22px"></f7-icon>
-            </f7-link>
-            <f7-link href="/progress/">
-                <f7-icon ion="android-time" size="22px"></f7-icon>
-            </f7-link>
-            <f7-link href="/about/">
-                <f7-icon ion="help-circled" size="22px"></f7-icon>
-            </f7-link>
-            <f7-link href="/profile/">
-                <f7-icon ion="android-person" size="22px"></f7-icon>
-            </f7-link>
-        </f7-toolbar>
+      </f7-navbar>
 
        <f7-card>
         <f7-card-header class="fontbold">Edit Alamat</f7-card-header>
@@ -73,7 +38,7 @@
            </f7-list>
         </f7-card-content>
         <f7-card-footer>
-          <f7-button round color="pink" fill class="round" href="/profile/">Simpan</f7-button>
+          <f7-button round color="pink" fill class="round" href="/Profile/">Simpan</f7-button>
           <f7-button round color="blue" fill class="round" href="/main/">Tidak</f7-button>
         </f7-card-footer>
         <f7-card-footer>

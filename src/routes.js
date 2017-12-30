@@ -18,6 +18,7 @@ import Search from './pages/search.vue'
 import Cart from './pages/cart.vue'
 
 import Home from './pages/home'
+// import Profile from './pages/profile/Profile.vue'
 
 export default [
   {
@@ -80,4 +81,8 @@ export default [
     path: "/home/",
     component: Home
   },
+  // {
+  //   path: "/Profile/",
+  //   component: Profile
+  // }
 ];

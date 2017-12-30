@@ -1,5 +1,6 @@
 <template>
-  <div class="page-content">
+  <div>
+    <!-- class="page-content" -->
       <f7-card>
         <f7-card-header class="fontbold">Informasi Akun</f7-card-header>
         <f7-card-content>
@@ -75,5 +76,8 @@ export default {
   }
   .button {
     margin:0 auto; /* this will center  it */
+  }
+  .jarak{
+    padding-top: 10px;
   }
 </style>

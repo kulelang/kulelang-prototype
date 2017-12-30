@@ -1,6 +1,23 @@
 <template>
+
   <f7-page tabbar-fixed class="bg">
-    <f7-navbar title="Utama" sliding>
+    <f7-panel left layout="light">
+        <f7-navbar title="Kategori"></f7-navbar>
+            <f7-block>
+                <f7-list media-list>
+                    <f7-list-item
+                    link="/home/"
+                    media="<img src='https://png.icons8.com/color/50/000000/lego.png'>">
+                </f7-list-item>
+            </f7-list> 
+        </f7-block>   
+    </f7-panel>  
+    
+    <f7-navbar sliding>
+        <f7-nav-left>
+            <f7-button icon="icon-bars" open-panel="left"></f7-button>
+        </f7-nav-left>
+
         <f7-nav-right class="padding-right">
                 <f7-link href="/search/">
                     <f7-icon ion="search"></f7-icon>
@@ -8,8 +25,10 @@
                 <f7-link href="/cart/">
                     <f7-icon ion="android-cart"></f7-icon>
                 </f7-link> 
-            </f7-nav-right>
+        </f7-nav-right>
     </f7-navbar>
+
+
 
     <f7-tabs animated>
       <f7-tab id="home">

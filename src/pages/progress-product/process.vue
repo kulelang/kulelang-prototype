@@ -1,19 +1,25 @@
 <template>
     <f7-page class="bg">
-        
         <f7-navbar>
             <f7-nav-left icon="icon-bars" back-link="Kembali">
+                <f7-link href="/home/"></f7-link>
             </f7-nav-left>
+            <f7-nav-right class="padding-right">
+                <f7-link href="/search/">
+                    <f7-icon ion="search"></f7-icon>
+                </f7-link>
+                <f7-link href="/cart/">
+                    <f7-icon ion="android-cart"></f7-icon>
+                </f7-link> 
+            </f7-nav-right>
         </f7-navbar>
-            <!-- Left Panel with Reveal effect -->
-        <f7-panel left cover>
-            <!-- Left panel content goes here -->
+        <!-- <f7-panel left cover>
             <div class="content-block">
                  <p>Left Panel content here</p>
                     <p><a href="#" class="panel-close">Close me</a>
                  </p>
             </div>
-        </f7-panel>
+        </f7-panel> -->
 
         <f7-toolbar top tabbed tabbar>
             <f7-link tab-link="#process">
@@ -25,7 +31,6 @@
         </f7-toolbar>
 
 
-    <div class="padding"></div>
     <div class="list-block media-list inset">
         <div class="card facebook-card">
             <div class="card-header">
@@ -95,9 +100,9 @@
   .facebook-card .card-content-inner {
     padding: 15px 10px;
   }  
-  .padding{
-      padding-top: 30px;
-  }
+  /* .padding{
+      padding-top: 10px;
+  } */
 </style>
 
 <style>

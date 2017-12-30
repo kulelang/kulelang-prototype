@@ -1,34 +1,10 @@
 <template>
 <f7-page class="bg">
-    <f7-navbar >
-            <f7-nav-left>
-                <f7-link icon="icon-bars" open-panel="left"></f7-link>
-                <p>Buat Barang Lelang</p>
-            </f7-nav-left>
-            <f7-nav-right class="padding-right">
-                <f7-link href="/search/">
-                    <f7-icon ion="search"></f7-icon>
-                </f7-link>
-                <f7-link href="/cart/">
-                    <f7-icon ion="android-cart"></f7-icon>
-                </f7-link> 
-            </f7-nav-right>
-        </f7-navbar>
-            <!-- Left Panel with Reveal effect -->
-        <f7-panel left cover>
-            <!-- Left panel content goes here -->
-            <div class="content-block">
-                 <!-- <p>Left Panel content here</p>
-                    <p><a href="#" class="panel-close">Close me</a>
-                 </p> -->
-                 <f7-link close-panel>Close Panel</f7-link>
-            </div>
-        </f7-panel>
+    <f7-navbar>
+        <f7-nav-left icon="icon-bars" back-link="Kembali">
+        </f7-nav-left>
+    </f7-navbar>
         
-        <!-- ini buat semacam header dibawah -->
-        <f7-toolbar bottom tabbed tabbar inner>
-            <toolbar></toolbar>
-        </f7-toolbar>
 
         <f7-card>
             <f7-card-header class="fontbold">Anda Ingin Lelang Apa Hari Ini?</f7-card-header>
@@ -66,7 +42,7 @@
         <f7-card>
           <f7-card-header class="fontbold">Gambar Produk</f7-card-header>
           <f7-card-content>
-            <div >
+            <div  >
               <div v-if="!image">
                 <h2>Select an image</h2>
                 <input type="file" @change="onFileChange">
@@ -214,9 +190,6 @@ export default {
     margin: auto;
     display: block;
     margin-bottom: 10px;
-  }
-  .button {
-    
   }
 </style>
 
