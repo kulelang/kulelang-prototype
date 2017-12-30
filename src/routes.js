@@ -77,7 +77,7 @@ export default [
     component: Cart
   },
   {
-    path : "/home/",
-    component  : Home
-  }
+    path: "/home/",
+    component: Home
+  },
 ];

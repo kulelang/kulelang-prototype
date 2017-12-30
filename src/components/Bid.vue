@@ -1,5 +1,5 @@
 <template>
-        <div>
+    <div>
         <h3 class="padding-left">LELANG HARI INI</h3>
         <!-- list-block buat bikin item -->
         <div class="list-block media-list bg__list inset">
@@ -61,6 +61,14 @@
     }
     .center{
         text-align: center;
+    }
+    .btn-circle.btn-lg {
+        width: 50px;
+        height: 50px;
+        padding: 10px 16px;
+        font-size: 18px;
+        line-height: 1.33;
+        border-radius: 25px;
     }
 </style>
 

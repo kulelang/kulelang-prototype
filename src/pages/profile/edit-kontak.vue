@@ -50,8 +50,8 @@
            </f7-list>
         </f7-card-content>
         <f7-card-footer>
-          <f7-button  color="pink" fill  href="/profile/">Simpan</f7-button>
-          <f7-button color="green" fill  href="/main/">Tidak</f7-button>
+          <f7-button  color="pink" fill  href="/Profile/">Simpan</f7-button>
+          <f7-button color="green" fill  href="/home/">Tidak</f7-button>
         </f7-card-footer>
       </f7-card>
           

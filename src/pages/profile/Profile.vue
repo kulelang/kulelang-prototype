@@ -1,4 +1,3 @@
-
 <template>
   <div class="page-content">
       <f7-card>

@@ -1,5 +1,5 @@
 <template>
-  <f7-page tabbar-fixed>
+  <f7-page tabbar-fixed class="bg">
     <f7-navbar title="Utama" sliding>
         <f7-nav-right class="padding-right">
                 <f7-link href="/search/">
