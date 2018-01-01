@@ -3,7 +3,6 @@ import Sign from './pages/sign.vue'
 import Signup from './pages/signup.vue'
 
 import Process from './pages/progress-product/process'
-import Finish from './pages/progress-product/finish'
 
 import Lupapassword from './pages/lupapassword.vue'
 
@@ -36,10 +35,6 @@ export default [
   {
     path: "/process/",
     component: Process
-  },
-  {
-    path: "/finish/",
-    component: Finish
   },
   {
     path: "/editprofile/",

@@ -49,8 +49,6 @@
         </f7-nav-right>
     </f7-navbar>
 
-
-
     <f7-tabs animated>
       <f7-tab id="home">
         <bid></bid>

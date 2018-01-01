@@ -18,9 +18,6 @@
         <f7-panel left >
             <!-- Left panel content goes here -->
             <div class="content-block">
-                 <!-- <p>Left Panel content here</p>
-                    <p><a href="#" class="panel-close">Close me</a>
-                 </p> -->
                  <f7-link close-panel>Close Panel</f7-link>
             </div>
         </f7-panel>
