@@ -8,12 +8,19 @@
                     <f7-list-item
                     link="/home/"
                     media="<img src='https://png.icons8.com/color/50/000000/lego.png'>">
-                </f7-list-item>
-            </f7-list> 
-        </f7-block>   
+                    </f7-list-item>
+                </f7-list> 
+            </f7-block> 
+            <f7-block>
+                <f7-list media-list>
+                    <f7-list-item
+                    link="/cart/">Logout
+                    </f7-list-item>
+                </f7-list> 
+            </f7-block>   
     </f7-panel>  
     
-    <f7-navbar sliding>
+    <f7-navbar>
         <f7-nav-left>
             <f7-button icon="icon-bars" open-panel="left"></f7-button>
         </f7-nav-left>

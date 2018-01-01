@@ -14,7 +14,7 @@
             </f7-nav-right>
         </f7-navbar>
 
-        <f7-toolbar top tabbed tabbar>
+        <f7-toolbar top tabbed tabbar >
             <f7-link href="/process/">
                 <f7-icon ion="android-time" size="20px"></f7-icon>Progress
             </f7-link>

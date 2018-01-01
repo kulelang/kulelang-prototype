@@ -44,7 +44,42 @@ id="app"
                 <button @click="removeImage">Remove image</button>
               </div>
             </div>
+<!-- <f7-toolbar tabbar>
+  <f7-link tab-link="#tab1">Tab 1</f7-link>
+  <f7-link tab-link="#tab2">Tab 2</f7-link>
+</f7-toolbar> -->
 
+<f7-list>
+  <f7-list-item swipeout title="Item 1">
+    <f7-swipeout-actions left>
+      <f7-swipeout-button close color="orange">Mark</f7-swipeout-button>
+    </f7-swipeout-actions>
+  </f7-list-item>
+  <f7-list-item swipeout title="Item 2">
+    <f7-swipeout-actions left>
+      <f7-swipeout-button close color="orange">Mark</f7-swipeout-button>
+    </f7-swipeout-actions>
+  </f7-list-item>
+</f7-list>
+
+<f7-list>
+  <f7-list-item swipeout title="Item 1" @swipeout:deleted="onSwipeoutDeleted">
+    <f7-swipeout-actions>
+      <f7-swipeout-button delete>Delete</f7-swipeout-button>
+    </f7-swipeout-actions>
+  </f7-list-item>
+  <f7-list-item swipeout title="Item 2" @swipeout:deleted="onSwipeoutDeleted">
+    <f7-swipeout-actions>
+      <f7-swipeout-button delete>Delete</f7-swipeout-button>
+    </f7-swipeout-actions>
+  </f7-list-item>
+</f7-list>
+
+
+<f7-toolbar bottom>
+  <f7-link>Left Link</f7-link>
+  <f7-link>Right Link</f7-link>
+</f7-toolbar>
 
   </f7-page>
 </template>
