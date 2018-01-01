@@ -6,20 +6,6 @@
             <f7-block>
                 <f7-list>
                     <f7-list-item
-<<<<<<< HEAD
-                    link="/home/"
-                    media="<img src='https://png.icons8.com/color/50/000000/lego.png'>">
-                    </f7-list-item>
-                </f7-list> 
-            </f7-block> 
-            <f7-block>
-                <f7-list media-list>
-                    <f7-list-item
-                    link="/cart/">Logout
-                    </f7-list-item>
-                </f7-list> 
-            </f7-block>   
-=======
                         link="/home/"
                         media="<img src='https://png.icons8.com/color/48/lego-head.png' title='Lego Head' width='48' height='48'>"
                         title="Logo">
@@ -46,7 +32,6 @@
                     </f7-list-item>
             </f7-list> 
         </f7-block>   
->>>>>>> 2dceb3a3c85ac6dfc3e07c1f936f980ca853a3f3
     </f7-panel>  
     
     <f7-navbar>

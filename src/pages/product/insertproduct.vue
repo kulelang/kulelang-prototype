@@ -39,7 +39,7 @@
             </f7-card-content>
         </f7-card>
 
-        <f7-card>
+        <f7-card  >
           <f7-card-header class="fontbold">Gambar Produk</f7-card-header>
           <f7-card-content>
             <div  >

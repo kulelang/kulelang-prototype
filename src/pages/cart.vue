@@ -12,7 +12,7 @@
                     <a href="#" class="item-link item-content">
                         <div class="item-media"><i class="ion-cube"></i></div>
                             <div class="item-inner">
-                            <div class="item-title">Item with badge</div>
+                            <div class="item-title">Nama Barang</div>
                             <div class="item-after">
                                 <a href="#">
                                     <i class="ion-minus"></i>

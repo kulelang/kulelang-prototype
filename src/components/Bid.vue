@@ -11,6 +11,7 @@
         <ul>
             <li v-for="item in items" :key="item.id">
             <a href="/detailbarang/" class="item-link item-content">
+            <!-- <router-link to="/detailbarang/" class="item-link item-content">Home -->
                 <div class="item-media">
                     <img src="/" width="50" height="50" class="padding-right">
                 </div>
@@ -21,6 +22,7 @@
                 <div>Open Bid Rp {{ item.open_bid }},-</div>
                 <br>
                 </div>
+                <!-- </router-link> -->
             </a>
             </li>
         </ul>
