@@ -2,66 +2,57 @@
     <f7-page class="bg">
         <f7-navbar>
             <f7-nav-left icon="icon-bars" back-link="Kembali">
-                <f7-link href="/home/"></f7-link>
             </f7-nav-left>
-            <f7-nav-right class="padding-right">
-                <f7-link href="/search/">
-                    <f7-icon ion="search"></f7-icon>
-                </f7-link>
-                <f7-link href="/cart/">
-                    <f7-icon ion="android-cart"></f7-icon>
-                </f7-link> 
-            </f7-nav-right>
         </f7-navbar>
-        <!-- <f7-panel left cover>
-            <div class="content-block">
-                 <p>Left Panel content here</p>
-                    <p><a href="#" class="panel-close">Close me</a>
-                 </p>
-            </div>
-        </f7-panel> -->
 
         <f7-toolbar top tabbed tabbar>
-            <f7-link tab-link="#process">
+            <f7-link tab-link="#progress">
                 <f7-icon ion="android-time" size="20px"></f7-icon>Progress
             </f7-link>
-            <f7-link href="/finish/">
+            <f7-link tab-link="#success">
                 <f7-icon ion="android-done" size="22px"></f7-icon>Selesai
             </f7-link>
         </f7-toolbar>
 
+    <f7-tabs animated>
+      <f7-tab id="progress">
+        <div class="list-block media-list inset">
+            <div class="card facebook-card">
+                <div class="card-header">
+                    <div class="facebook-avatar"><img src="" width="50" height="50"></div>
+                    <div class="facebook-name"><b>Nama Barang</b></div>
+                    <div class="facebook-name">Status Barang</div>
+                    <div class="facebook-name">No Resi</div>
+                    <div class="facebook-date" >Monday at 2:15 PM</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-content-inner">
+                    <p>Alamat Pengiriman Barang</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+      </f7-tab>
+      
+      <f7-tab id="success">
+        <div class="card facebook-card">
+                <div class="card-header">
+                    <div class="facebook-avatar"><img src="" width="50" height="50"></div>
+                    <div class="facebook-name"><b>Nama Barang</b></div>
+                    <div class="facebook-name">Status Barang</div>
+                    <div class="facebook-name">No Resi</div>
+                    <div class="facebook-date" >Monday at 2:15 PM</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-content-inner">
+                    <p>Alamat Pengiriman Barang</p>
+                    </div>
+                </div>
+            </div>
+      </f7-tab>
 
-    <div class="list-block media-list inset">
-        <div class="card facebook-card">
-            <div class="card-header">
-                <div class="facebook-avatar"><img src="" width="50" height="50"></div>
-                <div class="facebook-name"><b>Nama Barang</b></div>
-                <div class="facebook-name">Status Barang</div>
-                <div class="facebook-name">No Resi</div>
-                <div class="facebook-date" >Monday at 2:15 PM</div>
-            </div>
-            <div class="card-content">
-                <div class="card-content-inner">
-                <p>Alamat Pengiriman Barang</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="card facebook-card">
-            <div class="card-header">
-                <div class="facebook-avatar"><img src="" width="50" height="50"></div>
-                <div class="facebook-name"><b>Nama Barang</b></div>
-                <div class="facebook-name">Status Barang</div>
-                <div class="facebook-name">No Resi</div>
-                <div class="facebook-date" >Monday at 2:15 PM</div>
-            </div>
-            <div class="card-content">
-                <div class="card-content-inner">
-                <p>Alamat Pengiriman Barang</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    </f7-tabs>
+
     
     </f7-page>  
 </template>
@@ -100,9 +91,7 @@
   .facebook-card .card-content-inner {
     padding: 15px 10px;
   }  
-  /* .padding{
-      padding-top: 10px;
-  } */
+
 </style>
 
 <style>
@@ -115,13 +104,7 @@
 </style>
 
 <script>
-
-import Toolbar from '../../components/Toolbar'
-
 export default {
   name: 'Process',
-  components : {
-      'toolbar' : Toolbar
-  }
 }
 </script>

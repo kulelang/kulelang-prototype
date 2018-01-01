@@ -4,8 +4,9 @@
     <f7-panel left layout="light">
         <f7-navbar title="Kategori"></f7-navbar>
             <f7-block>
-                <f7-list media-list>
+                <f7-list>
                     <f7-list-item
+<<<<<<< HEAD
                     link="/home/"
                     media="<img src='https://png.icons8.com/color/50/000000/lego.png'>">
                     </f7-list-item>
@@ -18,6 +19,34 @@
                     </f7-list-item>
                 </f7-list> 
             </f7-block>   
+=======
+                        link="/home/"
+                        media="<img src='https://png.icons8.com/color/48/lego-head.png' title='Lego Head' width='48' height='48'>"
+                        title="Logo">
+                    </f7-list-item>
+                     <f7-list-item
+                        link="/home/"
+                        media="<img src='https://png.icons8.com/ios7/50/mobile-suit-gundam.png' title='Mobile Suit Gundam' width='50' height='50'>"
+                        title="Gundam">
+                    </f7-list-item>
+                    <f7-list-item
+                        link="/home/"
+                        media="<img src='https://png.icons8.com/color/50/000000/lego.png'>"
+                        title="Miniatur">
+                    </f7-list-item>
+                    <f7-list-item
+                        link="/home/"
+                        media="<img src='https://png.icons8.com/color/48/plush.png' title='Plush' width='48' height='48'>"
+                        title="Plush">
+                    </f7-list-item>
+                    <f7-list-item
+                        link="/home/"
+                        media="<img src='https://png.icons8.com/color/50/000000/lego.png'>"
+                        title="Action Figure">
+                    </f7-list-item>
+            </f7-list> 
+        </f7-block>   
+>>>>>>> 2dceb3a3c85ac6dfc3e07c1f936f980ca853a3f3
     </f7-panel>  
     
     <f7-navbar>
@@ -34,8 +63,6 @@
                 </f7-link> 
         </f7-nav-right>
     </f7-navbar>
-
-
 
     <f7-tabs animated>
       <f7-tab id="home">
@@ -81,6 +108,14 @@ export default {
         'bid': Bid,
         'app-about': About,
         'app-profile': Profile
+    },
+    data(){
+        const menu = {
+            title : 'Lego',
+        }
+        return {
+            menus : menu
+        }
     }
 
 }

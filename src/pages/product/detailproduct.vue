@@ -1,11 +1,6 @@
 <template>
   <f7-page class="bg">
-        <f7-navbar>
-            <f7-nav-left >
-                <f7-link icon="icon-bars" open-panel="left"></f7-link>
-                <p>diisi nama barang yg dipilih</p>
-            </f7-nav-left>
-
+        <f7-navbar back-link="Kembali">
             <f7-nav-right class="padding-right">
                 <f7-link href="/search/">
                     <f7-icon ion="search"></f7-icon>
@@ -15,71 +10,7 @@
                 </f7-link> 
             </f7-nav-right>
         </f7-navbar>
-            <!-- Left Panel with Reveal effect -->
-        <f7-panel left >
-            <!-- Left panel content goes here -->
-            <div class="content-block">
-                 <!-- <p>Left Panel content here</p>
-                    <p><a href="#" class="panel-close">Close me</a>
-                 </p> -->
-                 <f7-link close-panel>Close Panel</f7-link>
-            </div>
-        </f7-panel>
 
-         <!-- ini buat semacam header dibawah -->
-        <f7-toolbar bottom tabbed tabbar inner>
-            <toolbar></toolbar>
-        </f7-toolbar>
-        
-      <h1>hai ini detail produk</h1>
-
-id="app"
-      <div  >
-              <div v-if="!image">
-                <h2>Select an image</h2>
-                <input type="file" @change="onFileChange">
-              </div>
-              <div v-else>
-                <img :src="image" />
-                <button @click="removeImage">Remove image</button>
-              </div>
-            </div>
-<!-- <f7-toolbar tabbar>
-  <f7-link tab-link="#tab1">Tab 1</f7-link>
-  <f7-link tab-link="#tab2">Tab 2</f7-link>
-</f7-toolbar> -->
-
-<f7-list>
-  <f7-list-item swipeout title="Item 1">
-    <f7-swipeout-actions left>
-      <f7-swipeout-button close color="orange">Mark</f7-swipeout-button>
-    </f7-swipeout-actions>
-  </f7-list-item>
-  <f7-list-item swipeout title="Item 2">
-    <f7-swipeout-actions left>
-      <f7-swipeout-button close color="orange">Mark</f7-swipeout-button>
-    </f7-swipeout-actions>
-  </f7-list-item>
-</f7-list>
-
-<f7-list>
-  <f7-list-item swipeout title="Item 1" @swipeout:deleted="onSwipeoutDeleted">
-    <f7-swipeout-actions>
-      <f7-swipeout-button delete>Delete</f7-swipeout-button>
-    </f7-swipeout-actions>
-  </f7-list-item>
-  <f7-list-item swipeout title="Item 2" @swipeout:deleted="onSwipeoutDeleted">
-    <f7-swipeout-actions>
-      <f7-swipeout-button delete>Delete</f7-swipeout-button>
-    </f7-swipeout-actions>
-  </f7-list-item>
-</f7-list>
-
-
-<f7-toolbar bottom>
-  <f7-link>Left Link</f7-link>
-  <f7-link>Right Link</f7-link>
-</f7-toolbar>
 
   </f7-page>
 </template>
@@ -105,7 +36,6 @@ id="app"
 </style>
 
 <script>
-import Toolbar from '../../components/Toolbar'
 
 export default {
   name: 'DetailBarang',

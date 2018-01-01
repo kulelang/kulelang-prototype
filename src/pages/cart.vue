@@ -4,14 +4,38 @@
             <f7-nav-left back-link="Kembali">
             </f7-nav-left>
         </f7-navbar>
-            <!-- Left Panel with Reveal effect -->
-        <f7-panel left >
-            <!-- Left panel content goes here -->
-            <div class="content-block">
-                 <f7-link close-panel>Close Panel</f7-link>
-            </div>
-        </f7-panel>
-        <h1>HALAMAN CART</h1>
+        
+        <div class="list-block inset">
+            <h1>Cart</h1>
+            <ul>
+                 <li>
+                    <a href="#" class="item-link item-content">
+                        <div class="item-media"><i class="ion-cube"></i></div>
+                            <div class="item-inner">
+                            <div class="item-title">Item with badge</div>
+                            <div class="item-after">
+                                <a href="#">
+                                    <i class="ion-minus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="item-link item-content">
+                        <div class="item-media"><i class="ion-cube"></i></div>
+                            <div class="item-inner">
+                            <div class="item-title">Item with badge</div>
+                            <div class="item-after">
+                                <a href="#">
+                                    <i class="ion-minus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </f7-page>
 </template>
 
@@ -20,12 +44,8 @@
 </style>
 
 <script>
-    import Toolbar from '../components/Toolbar'
 
 export default {
     name : 'Cart',
-    components: {
-        'base-toolbar': Toolbar
-    },
 }
 </script>
