@@ -1,5 +1,4 @@
 <template>
-
   <f7-page tabbar-fixed class="bg">
     <f7-panel left layout="light">
         <f7-navbar title="Kategori"></f7-navbar>

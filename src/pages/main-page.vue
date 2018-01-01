@@ -100,13 +100,11 @@
 </style>
 
 <script>
-import Toolbar from '../components/Toolbar'
+
 
 export default {
     name : 'Main',
-    components: {
-        'base-toolbar': Toolbar
-    },
+
     data(){
         let objek = [
           { _id : 1, name : 'Lego Star Wars',open_bid:20000},
