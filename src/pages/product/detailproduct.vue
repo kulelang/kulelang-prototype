@@ -38,9 +38,6 @@
 
 export default {
   name: 'DetailBarang',
-  components : {
-      'toolbar' : Toolbar
-  },
   data: {
     image: ''
   },
