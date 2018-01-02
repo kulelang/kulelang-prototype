@@ -1,6 +1,5 @@
 <template>
-  <div class="page-content">
-    <!-- class="page-content" -->
+<div class="padding">
       <f7-card>
         <f7-card-header class="fontbold">Informasi Akun</f7-card-header>
         <f7-card-content>
@@ -20,7 +19,7 @@
            </f7-list>
         </f7-card-content>
         <f7-card-footer>
-          <f7-button round color="pink" fill  href="/editkontak/">Ubah</f7-button>
+          <f7-button round color="blue" block  href="#">Ubah</f7-button>
         </f7-card-footer>
       </f7-card>
 
@@ -46,12 +45,12 @@
               </f7-list-item>
            </f7-list>
         </f7-card-content>
-        <f7-card-footer>
-          <f7-button color="pink" fill  href="/editprofile/">Ubah</f7-button>
-          <f7-button color="blue" fill  href="/tambahalamat/">Tambah Alamat Baru</f7-button>
+                <f7-card-footer>
+          <f7-button round color="blue" block  href="#">Ubah</f7-button>
         </f7-card-footer>
       </f7-card>
-  </div>
+</div>  
+
 </template>
 
 <script>
@@ -62,6 +61,13 @@ export default {
 </script>
 
 <style>
+  .padding {
+    padding: 0;
+    overflow: auto;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
   .round{
     border-radius: 30px;
     width: auto;
@@ -74,9 +80,7 @@ export default {
   .font{
     font-size: 12px
   }
-  .button {
-    margin:0 auto; /* this will center  it */
-  }
+
   .jarak{
     padding-top: 10px;
   }

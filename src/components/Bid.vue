@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div >
         <f7-fab class="btn__floated" color="orange" href="/insertproduct/">
 
             <f7-icon icon="icon-plus"></f7-icon>
@@ -13,7 +13,7 @@
             <a href="/detailbarang/" class="item-link item-content">
             <!-- <router-link to="/detailbarang/" class="item-link item-content">Home -->
                 <div class="item-media">
-                    <img src="/" width="50" height="50" class="padding-right">
+                    <img src="https://png.icons8.com/nolan/64/000000/lego-head.png">
                 </div>
                 <div class="item-inner">
                 <div class="item-title-row">
@@ -32,7 +32,7 @@
 
 <style scoped>
     .btn__floated {
-        margin-bottom: 10px;
+        margin-top: 500px;
     }
     .list__margin {
         margin: 20px;

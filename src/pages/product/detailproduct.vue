@@ -1,6 +1,6 @@
 
 <template>
-  <f7-page class="bg">
+  <f7-page>
         <f7-navbar back-link="Kembali">
             <f7-nav-right class="padding-right">
                 <f7-link href="/search/">
@@ -11,6 +11,16 @@
                 </f7-link> 
             </f7-nav-right>
         </f7-navbar>
+
+<div class="bid__detail">
+
+<h3>Detail Lelang</h3>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aliquam, rem dolores asperiores. Atque, iste, ad. Voluptate pariatur molestiae dolorum ea modi nam, dolorem, nihil, minus sed neque mollitia minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ipsa nam earum temporibus, facere reprehenderit iste, ea deleniti soluta eum itaque vero veniam quaerat doloremque nostrum explicabo ab, consequatur, delectus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dolorem nisi quod aliquid eos et accusamus vel perferendis consequuntur officia, autem architecto ipsam fugiat ratione rem laboriosam? Eos, blanditiis consequatur.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aliquam, rem dolores asperiores. Atque, iste, ad. Voluptate pariatur molestiae dolorum ea modi nam, dolorem, nihil, minus sed neque mollitia minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ipsa nam earum temporibus, facere reprehenderit iste, ea deleniti soluta eum itaque vero veniam quaerat doloremque nostrum explicabo ab, consequatur, delectus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dolorem nisi quod aliquid eos et accusamus vel perferendis consequuntur officia, autem architecto ipsam fugiat ratione rem laboriosam? Eos, blanditiis consequatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aliquam, rem dolores asperiores. Atque, iste, ad. Voluptate pariatur molestiae dolorum ea modi nam, dolorem, nihil, minus sed neque mollitia minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ipsa nam earum temporibus, facere reprehenderit iste, ea deleniti soluta eum itaque vero veniam quaerat doloremque nostrum explicabo ab, consequatur, delectus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dolorem nisi quod aliquid eos et accusamus vel perferendis consequuntur officia, autem architecto ipsam fugiat ratione rem laboriosam? Eos, blanditiis consequatur.</p>
+      
+
+</div>
 
   </f7-page>
 </template>
@@ -30,18 +40,20 @@
     display: block;
     margin-bottom: 10px;
   }
-  .button {
-    
+
+  .bid__detail {
+    margin: 20px;
+    align-items: center;
+    color: #666;
   }
+
 </style>
 
 <script>
 
 export default {
   name: 'DetailBarang',
-  data: {
-    image: ''
-  },
+
   methods: {
     onFileChange(e) {
       var files = e.target.files || e.dataTransfer.files;

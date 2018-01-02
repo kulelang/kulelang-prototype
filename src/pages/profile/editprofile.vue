@@ -1,4 +1,3 @@
-// menampilkan profile
 <template>
   <f7-page class="bg">
      <f7-navbar>
@@ -42,7 +41,7 @@
            </f7-list>
         </f7-card-content>
         <f7-card-footer>
-          <f7-button color="pink" fill href="/Profile/">Simpan</f7-button>
+          <f7-button color="pink" block href="/Profile/">Simpan</f7-button>
           <f7-button color="blue" fill href="/main/">Tidak</f7-button>
         </f7-card-footer>
       </f7-card>

@@ -12,7 +12,7 @@
     <div class="list-block media-list inset">
         <div class="card facebook-card">
             <div class="card-header">
-                <div class="facebook-avatar"><img src="" width="50" height="50"></div>
+                <div class="facebook-avatar"><img src="https://png.icons8.com/nolan/64/000000/lego-head.png"></div>
                 <div class="facebook-name"><b>Nama Barang</b></div>
                 <div class="facebook-name">Status Barang</div>
                 <div class="facebook-name">No Resi</div>

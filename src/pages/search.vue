@@ -4,9 +4,6 @@
             <f7-nav-left back-link="Kembali">
             </f7-nav-left>
             <f7-nav-right class="padding-right">
-                <f7-link href="/cart/">
-                    <f7-icon ion="android-cart"></f7-icon>
-                </f7-link> 
             </f7-nav-right>
         </f7-navbar>
             <!-- Left Panel with Reveal effect -->
@@ -34,21 +31,20 @@
     <div class="content-block searchbar-not-found">
       <div class="content-block-inner">Nothing found</div>
     </div>
- 
     <!-- This block will be displayed if anything found, and this list block is used a searbar target -->
     <div class="list-block list-block-search searchbar-found">
       <ul>
-        <li class="item-content">
-          <div class="item-inner">
-            <div class="item-title">Acura </div>
-          </div>
+        <li>
+          <a href="#" class="item-link item-content">
+            <div class="item-media"><img src="http://lorempixel.com/160/160/people/1" width="80"></div>
+            <div class="item-inner">
+            <div class="item-title-row">
+              <div class="item-title">&nbsp;&nbsp;In your Eyes</div>
+              <div class="item-after">Open Bid Rp.2000</div>
+            </div>
+            </div>
+          </a>
         </li>
-        <li class="item-content">
-          <div class="item-inner" >
-            <div class="item-title" href="/main/">Audi</div>
-          </div>
-        </li>
-        ...
       </ul>
     </div>
   </div>

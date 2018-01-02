@@ -32,7 +32,7 @@
             <f7-card-content>
                 <f7-list form>
                 <f7-list-item>
-                    <f7-icon ion="location" class="ukuran-icon"></f7-icon>
+                    <f7-icon ion="location" class="ukuran-icon" size="22px"></f7-icon>
                     <f7-label>panggil alamat dari profile</f7-label>
                 </f7-list-item>
                 
@@ -83,7 +83,7 @@
                 </f7-list> -->
             </f7-card-footer>
         </f7-card>
-        <f7-button big color="blue" fill href="/home/" >Lanjutkan Berbelanja</f7-button>
+        <f7-button big color="blue" fill href="/home/" >order</f7-button>
         </div>
 
 

@@ -1,5 +1,5 @@
 <template>
-  <f7-page tabbar-fixed class="bg">
+  <f7-page tabbar>
     <f7-panel left layout="light">
         <f7-navbar title="Kategori"></f7-navbar>
             <f7-block>
@@ -93,14 +93,7 @@ export default {
         'app-about': About,
         'app-profile': Profile
     },
-    data(){
-        const menu = {
-            title : 'Lego',
-        }
-        return {
-            menus : menu
-        }
-    }
+
 
 }
 </script>

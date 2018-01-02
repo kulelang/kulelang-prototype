@@ -133,12 +133,12 @@
 
 <script>
 
+import Datepicker from 'vue-material-datepicker'
+
 export default {
   name: 'InsertProduct',
-  // new Vue({
-  // el: '#app',
-  data: {
-    image: ''
+  components: {
+      datepicker : Datepicker
   },
   methods: {
     onFileChange(e) {
