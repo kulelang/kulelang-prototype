@@ -1,27 +1,26 @@
 <template>
     <div id="app">
-          <f7-panel left layout="light">
-                            <f7-navbar title="Kategori"></f7-navbar>
-                            <f7-block>
-                                <f7-list>
-                                    <f7-list-item link="/home/" media="<img style='width: 30px;' src='https://beon.kulelang.id/assets/images/category-icons/bricks.svg'>" title="Brick">
-                                    </f7-list-item>
-                                    <f7-list-item link="/home/" media="<img style='width: 30px;' src='https://beon.kulelang.id/assets/images/category-icons/actions.svg'>" title="Action Figure">
-                                    </f7-list-item>
-                                    <f7-list-item link="/home/" media="<img style='width: 30px;' src='https://beon.kulelang.id/assets/images/category-icons/automobile.svg'>" title="Model Kit">
-                                    </f7-list-item>
-                                    <f7-list-item link="/home/" media="<img style='width: 30px;' src='https://beon.kulelang.id/assets/images/category-icons/racing.svg'>" title="Plush">
-                                    </f7-list-item>
-                                    <f7-list-item link="/home/" media="<img style='width: 30px;' src='https://beon.kulelang.id/assets/images/category-icons/camera.svg'>" title="Card">
-                                    </f7-list-item>
-                                </f7-list>
-                            </f7-block>
-                        </f7-panel>
+        <f7-panel left layout="light">
+            <f7-navbar title="Kategori"></f7-navbar>
+            <f7-block>
+                <f7-list>
+                    <f7-list-item link="/home/" media="<img style='width: 30px;' src='https://beon.kulelang.id/assets/images/category-icons/bricks.svg'>" title="Brick">
+                    </f7-list-item>
+                    <f7-list-item link="/home/" media="<img style='width: 30px;' src='https://beon.kulelang.id/assets/images/category-icons/actions.svg'>" title="Action Figure">
+                    </f7-list-item>
+                    <f7-list-item link="/home/" media="<img style='width: 30px;' src='https://beon.kulelang.id/assets/images/category-icons/automobile.svg'>" title="Model Kit">
+                    </f7-list-item>
+                    <f7-list-item link="/home/" media="<img style='width: 30px;' src='https://beon.kulelang.id/assets/images/category-icons/racing.svg'>" title="Plush">
+                    </f7-list-item>
+                    <f7-list-item link="/home/" media="<img style='width: 30px;' src='https://beon.kulelang.id/assets/images/category-icons/camera.svg'>" title="Card">
+                    </f7-list-item>
+                </f7-list>
+            </f7-block>
+        </f7-panel>
         <f7-views>
             <f7-view>
                 <f7-pages navbar-fixed toolbar-fixed>
                     <f7-page>
-                      
                         <f7-navbar>
                             <f7-nav-left>
                                 <f7-button icon="icon-bars" open-panel="left"></f7-button>
