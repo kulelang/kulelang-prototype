@@ -4,8 +4,6 @@
         <f7-nav-left icon="icon-bars" back-link="Kembali">
         </f7-nav-left>
     </f7-navbar>
-        
-
         <f7-card>
             <f7-card-header class="fontbold">Anda Ingin Lelang Apa Hari Ini?</f7-card-header>
             <f7-card-content>
@@ -127,26 +125,16 @@
 
           </f7-card-content>
         </f7-card>
-
-        
           <f7-button round color="green" fill  href="#">Buat Lelang</f7-button>
           <br>
           <f7-button round color="red" fill  href="#">Batal</f7-button>
-        
-
-
-
 </f7-page>
 </template>
 
 <script>
-import Toolbar from '../../components/Toolbar'
 
 export default {
   name: 'InsertProduct',
-  components : {
-      'toolbar' : Toolbar
-  },
   // new Vue({
   // el: '#app',
   data: {

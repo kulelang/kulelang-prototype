@@ -5,35 +5,6 @@
             </f7-nav-left>
         </f7-navbar>
        <div>
-        <!-- <div class="list-block inset"> -->
-            <!-- <ul>
-                 <li>
-                    <a href="#" class="item-link item-content">
-                        <div class="item-media"><i class="ion-cube"></i></div>
-                            <div class="item-inner">
-                            <div class="item-title">Nama Barang</div>
-                            <div class="item-after">
-                                <a href="#">
-                                    <i class="ion-minus"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="item-link item-content">
-                        <div class="item-media"><i class="ion-cube"></i></div>
-                            <div class="item-inner">
-                            <div class="item-title">Item with badge</div>
-                            <div class="item-after">
-                                <a href="#">
-                                    <i class="ion-minus"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            </ul> -->
         <f7-card>
             <f7-card-header class="fontbold">Pesanan Anda</f7-card-header>
             <f7-card-content>

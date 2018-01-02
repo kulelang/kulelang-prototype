@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page-content">
     <!-- class="page-content" -->
       <f7-card>
         <f7-card-header class="fontbold">Informasi Akun</f7-card-header>
