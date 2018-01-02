@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="page-content infinite-scroll">
         <f7-fab class="btn__floated" color="orange" href="/insertproduct/">
 
             <f7-icon icon="icon-plus"></f7-icon>
@@ -32,7 +32,7 @@
 
 <style scoped>
     .btn__floated {
-        margin-bottom: 10px;
+        margin-top: 500px;
     }
     .list__margin {
         margin: 20px;

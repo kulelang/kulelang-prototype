@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="page-content infinite-scroll">
+      
     <h1 align="center">Frequently Asked Question</h1>
     <f7-list accordion>
         <f7-list-item accordion-item title="Apa itu Kulelang.id?" class="bold">
@@ -89,6 +90,7 @@
 .color{
      color:#607D8B;
 }
+
 </style>
 
 <script>

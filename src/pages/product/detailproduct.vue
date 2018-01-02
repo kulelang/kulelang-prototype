@@ -12,6 +12,19 @@
             </f7-nav-right>
         </f7-navbar>
 
+
+<f7-grid>
+  <f7-col width="10" tablet-width="10">Col 1</f7-col>
+  <f7-col width="50" tablet-width="25">Col 2</f7-col>
+  <f7-col width="50" tablet-width="25">Col 3</f7-col>
+  <f7-col width="50" tablet-width="25">Col 4</f7-col>
+</f7-grid>
+
+<f7-grid no-gutter>
+  <f7-col width="50">Col 50%</f7-col>
+  <f7-col width="25">Col 25%</f7-col>
+  <f7-col width="25">Col 25%</f7-col>
+</f7-grid>
   </f7-page>
 </template>
 

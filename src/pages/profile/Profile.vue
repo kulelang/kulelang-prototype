@@ -1,5 +1,6 @@
 <template>
-  <div>
+
+  <div class="page-content infinite-scroll">
     <!-- class="page-content" -->
       <f7-card>
         <f7-card-header class="fontbold">Informasi Akun</f7-card-header>
@@ -52,6 +53,7 @@
         </f7-card-footer>
       </f7-card>
   </div>
+
 </template>
 
 <script>
