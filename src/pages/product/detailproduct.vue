@@ -3,11 +3,17 @@
   <f7-page>
     <f7-navbar back-link="Kembali">
       <f7-nav-right class="padding-right">
-        <f7-link href="/search/">
+        <f7-link href="#" data-popup=".test">
           <f7-icon ion="share "></f7-icon>
         </f7-link>
       </f7-nav-right>
     </f7-navbar>
+
+    <!-- Popup -->
+<f7-popup class="test">
+  <!-- Popup content goes here -->
+  <h1>Test</h1>
+</f7-popup>
   
     <div class="bid__detail">
       <h1>Detail Lelang</h1>
@@ -16,14 +22,6 @@
           <div class="item-media">
             <img src="https://png.icons8.com/nolan/64/000000/lego-head.png">
           </div>
-          <f7-buttons>
-            <f7-button fill color="green">
-              Open : Rp. xxxx
-            </f7-button>
-            <f7-button fill color="green">
-              Up : Rp. xxxx
-            </f7-button>
-          </f7-buttons>
         </div>
         <div class="col-40">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aliquam, rem dolores asperiores. Atque, iste, ad.</p>
@@ -31,6 +29,18 @@
             <i class="ion-ios-stopwatch-outline"></i>
             Batas : 1 Hari 2 Jam
           </a>
+          <br>
+           <f7-buttons>
+            <f7-button fill color="green">
+              Open : Rp. xxxx
+            </f7-button>
+          </f7-buttons>
+          &nbsp;
+          <f7-buttons>
+            <f7-button fill color="pink">
+              Up : Rp. xxxx
+            </f7-button>
+          </f7-buttons>
         </div>
         <div class="col-100">
           Iki Digae Diskusi

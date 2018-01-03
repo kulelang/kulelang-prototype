@@ -44,7 +44,7 @@ export default {
 <style>
   .fontbold{
     font-size: 15px;
-    font-weight: bold
+    
   }
   .font{
     font-size: 12px
