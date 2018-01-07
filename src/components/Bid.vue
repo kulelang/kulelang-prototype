@@ -32,7 +32,7 @@
 
 <style scoped>
     .btn__floated {
-        margin-top: 500px;
+        margin-bottom: 10px;
     }
     .list__margin {
         margin: 20px;
@@ -87,7 +87,7 @@ export default {
           { _id : 1, name : 'Lego Star Wars',open_bid:20000},
           { _id : 2, name : 'Squishy 9Gag - Beruang Kuning',open_bid:50000},
           { _id : 3, name : 'HG IBO Kimaris Vidar',open_bid:60000},
-          { _id : 4, name : 'Action figure', open_bid:7000}
+          { _id : 4, name : 'Action figure', open_bid:7000} 
         ]
         return {
             items : objek,
