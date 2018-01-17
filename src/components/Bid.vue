@@ -1,7 +1,6 @@
 <template>
     <div >
         <f7-fab class="btn__floated" color="orange" href="/insertproduct/">
-
             <f7-icon icon="icon-plus"></f7-icon>
         </f7-fab>
 

@@ -53,13 +53,8 @@
 </template>
 
 <script>
-  import Toolbar from '../../components/Toolbar'
-
   export default {
     name: 'TambahAlamat',
-    components : {
-        'toolbar' : Toolbar
-    }
 }
 
 </script>

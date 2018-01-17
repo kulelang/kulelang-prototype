@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="padding">
     <h1 align="center">Frequently Asked Question</h1>
     <f7-list accordion>
         <f7-list-item accordion-item title="Apa itu Kulelang.id?" class="bold">
@@ -76,8 +76,6 @@
         </f7-list-item>
         
     </f7-list>
-
-
   </div>
 </template>
 
@@ -88,6 +86,13 @@
 }
 .color{
      color:#607D8B;
+}
+
+.padding {
+    padding: 0;
+    overflow: auto;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 </style>
