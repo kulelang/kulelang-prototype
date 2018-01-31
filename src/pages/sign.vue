@@ -16,24 +16,16 @@
             <f7-list-item checkbox name="my-checkbox" value="1" style="font-size:14px">
                 Remember me
             </f7-list-item>
-            <!-- gabisa nganan in --> 
+            <!-- gabisa nganan in -->
             <f7-link href="/lupa" class="right">Lupa Password?</f7-link>
         </f7-list>
-        
         <f7-button href="/home/" class="btn__margin" big fill theme="cyan"> Login</f7-button>
-        <br><br>
-        <f7-button class="btn__margin" big fill color="red"> <i class="ion-social-googleplus-outline"></i> Login using google</f7-button>
         <br>
-         <!-- <g-signin-button
-            :params="googleSignInParams"
-            @success="onSignInSuccess"
-            @error="onSignInError">
-            Sign in with Google
-        </g-signin-button> -->
+        <f7-button @click="signInWithGogle" class="btn__margin" big fill color="red"> <i class="ion-social-googleplus-outline"></i> Login using google</f7-button>
         <br>
         <f7-button class="btn__margin" big fill color="blue"> <i class="ion-social-facebook"></i> Login using facebook</f7-button>
     </f7-block>
-</f7-page>    
+</f7-page>
 </template>
 
 <style>
@@ -57,34 +49,30 @@
     box-shadow: 0 3px 0 #0f69ff;
     }
 </style>
-    
+
 <script>
+
+import firebase from 'firebase'
+
 export default {
     name:'Sign',
-     data () {
-    return {
-      /**
-       * The Auth2 parameters, as seen on
-       * https://developers.google.com/identity/sign-in/web/reference#gapiauth2initparams.
-       * As the very least, a valid client_id must present.
-       * @type {Object}
-       */
-      googleSignInParams: {
-        client_id: 'YOUR_APP_CLIENT_ID.apps.googleusercontent.com'
+    data() {
+      return {
+        loading : true,
+        user : null,
       }
-    }
   },
-  methods: {
-    onSignInSuccess (googleUser) {
-      // `googleUser` is the GoogleUser object that represents the just-signed-in user.
-      // See https://developers.google.com/identity/sign-in/web/reference#users
-      const profile = googleUser.getBasicProfile() // etc etc
-    },
-    onSignInError (error) {
-      // `error` contains any error occurred.
-      console.log('OH NOES', error)
+    methods: {
+        signInWithGogle : function() {
+            const provider = new firebase.auth.GoogleAuthProvider()
+            provider.addScope('https://www.googleapis.com/auth/plus.login')
+            firebase.auth().signInWithPopup(provider).then((result) => {
+                  let user = result.user
+                  this.$f7.getCurrentView().loadPage('/sign')
+                  console.log(user.displayName)
+            }).catch(error => console.log(error) )
+        }
     }
-  }
 }
 </script>
 

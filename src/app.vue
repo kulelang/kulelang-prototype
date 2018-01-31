@@ -1,28 +1,32 @@
 <template>
   <!-- App -->
   <div id="app">
+
     <!-- Status bar overlay for full screen mode (Cordova or PhoneGap) -->
     <f7-statusbar></f7-statusbar>
     <!-- Views -->
+
     <f7-panel left layout="light">
       <f7-navbar title="Menu"></f7-navbar>
       <f7-block>
         <div class="item-media" align="center">
-          <img src="https://png.icons8.com/nolan/64/000000/lego-head.png">
+          <img >
+          <a href="">{{ user }}</a>
         </div>
         <div class="item-media" align="center">
-          <f7-badge color="green">Not logged in</f7-badge>
+          <f7-badge color="green" v-bind:text="user"></f7-badge>
         </div>
         <f7-list>
-          <f7-list-item link="#" media="<img style='width: 30px;' src='https://beon.kulelang.id/assets/images/category-icons/bricks.svg'>" title="Masuk">
+          <f7-list-item link="/sign" media="<img style='width: 30px;' src='https://beon.kulelang.id/assets/images/category-icons/bricks.svg'>" title="Masuk">
           </f7-list-item>
-          <f7-list-item link="#" media="<img style='width: 30px;' src='https://beon.kulelang.id/assets/images/category-icons/actions.svg'>" title="Daftar">
+          <f7-list-item link="/signup" media="<img style='width: 30px;' src='https://beon.kulelang.id/assets/images/category-icons/actions.svg'>" title="Daftar">
           </f7-list-item>
           <f7-list-item link="#" media="<img style='width: 30px;' src='https://beon.kulelang.id/assets/images/category-icons/actions.svg'>" title="Produk">
           </f7-list-item>
         </f7-list>
       </f7-block>
     </f7-panel>
+
     <f7-views>
       <!-- Your main view, should have "main" prop -->
       <f7-view main>
@@ -77,23 +81,41 @@
   </div>
 </template>
 
-<style>
-  
-</style>
-
-
 <script>
   import Bid from './components/Bid'
   import About from './components/About'
   import Profile from './pages/profile/Profile'
-  import Search from './components/Search'  
-  
+  import Search from './components/Search'
+  import firebase from 'firebase'
+  import {config} from './helper/firebaseConfig'
+
   export default {
+
+  created(){
+
+     let provider = new firebase.auth.GoogleAuthProvider();
+
+     provider.addScope('https://www.googleapis.com/auth/plus.login');
+
+    firebase.auth().getRedirectResult().then(function(result) {
+      if (result) {
+        let display = result.user
+        console.log(display)
+      } else {
+      }
+    })
+  },
     components: {
       'bid': Bid,
       'app-about': About,
-      'app-profile': Profile,
+      'app-profile':  Profile,
       'app-search': Search
     },
+    data(){
+      return{
+        user : 'Ivan Ganteng',
+        loading: true,
+      }
+    }
   }
 </script>

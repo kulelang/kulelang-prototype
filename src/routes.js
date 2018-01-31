@@ -1,4 +1,3 @@
-import Main from './pages/main-page.vue'
 import Sign from './pages/sign.vue'
 import Signup from './pages/signup.vue'
 
@@ -17,7 +16,8 @@ import Search from './pages/search.vue'
 import Cart from './pages/cart.vue'
 
 import Home from './pages/home'
-// import Profile from './pages/profile/Profile.vue'
+
+
 
 export default [
   {
@@ -30,7 +30,8 @@ export default [
   },
   {
     path: "/main/",
-    component: Home
+    component: Home,
+    name: "home"
   },
   {
     path: "/process/",
@@ -76,8 +77,4 @@ export default [
     path: "/home/",
     component: Home
   },
-  // {
-  //   path: "/Profile/",
-  //   component: Profile
-  // }
 ];

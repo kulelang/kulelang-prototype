@@ -26,11 +26,30 @@ import Routes from './routes.js'
 // Import App Component
 import App from './app'
 
+import VueRouter from 'vue-router'
+
+import firebase from 'firebase'
+import { config } from './helper/firebaseConfig'
+
+import Cart from './pages/cart'
+
 // Init F7 Vue Plugin
 Vue.use(Framework7Vue)
+Vue.use(VueRouter)
 
 // Init App
 new Vue({
+  created(){
+    firebase.initializeApp(config)
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.$f7.getCurrentView().loadPage('/app')
+      } else {
+
+      }
+    })
+  },
+
   el: '#app',
   template: '<app/>',
   // Init Framework7 by passing parameters here
@@ -45,7 +64,7 @@ new Vue({
     app: App
   }
 
-  
+
 });
 
 
